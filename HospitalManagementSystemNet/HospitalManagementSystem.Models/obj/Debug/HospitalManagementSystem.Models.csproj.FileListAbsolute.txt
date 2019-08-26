@@ -1,0 +1,11 @@
+C:\Users\Thabiso.Molise\Source\Repos\HospitalManagementSystemNet\HospitalManagementSystem.Models\bin\Debug\HospitalManagementSystem.Models.dll
+C:\Users\Thabiso.Molise\Source\Repos\HospitalManagementSystemNet\HospitalManagementSystem.Models\bin\Debug\HospitalManagementSystem.Models.pdb
+C:\Users\Thabiso.Molise\Source\Repos\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.csproj.CoreCompileInputs.cache
+C:\Users\Thabiso.Molise\Source\Repos\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.dll
+C:\Users\Thabiso.Molise\Source\Repos\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.pdb
+C:\Users\Thabiso.Molise\Source\Repos\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.csprojAssemblyReference.cache
+C:\Users\Thabiso.Molise\Source\Repos\Sepetlele\HospitalManagementSystemNet\HospitalManagementSystem.Models\bin\Debug\HospitalManagementSystem.Models.dll
+C:\Users\Thabiso.Molise\Source\Repos\Sepetlele\HospitalManagementSystemNet\HospitalManagementSystem.Models\bin\Debug\HospitalManagementSystem.Models.pdb
+C:\Users\Thabiso.Molise\Source\Repos\Sepetlele\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.csproj.CoreCompileInputs.cache
+C:\Users\Thabiso.Molise\Source\Repos\Sepetlele\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.dll
+C:\Users\Thabiso.Molise\Source\Repos\Sepetlele\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.pdb

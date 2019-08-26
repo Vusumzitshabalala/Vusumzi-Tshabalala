@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/HospitalManagementSystemNet/.vs/HospitalManagementSystemNet/config
+/HospitalManagementSystemNet/.vs/HospitalManagementSystemNet/v16/Server/sqlite3
+*.suo
+/obj
+/bin
+/.vs

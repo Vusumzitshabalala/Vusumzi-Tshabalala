@@ -1,0 +1,1319 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "CommonServiceLocator/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "JustMock/2013.3.1101.2": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.0.0",
+          "Unity": "2.1.505.2"
+        },
+        "compile": {
+          "lib/Net35/Telerik.JustMock.Container.dll": {},
+          "lib/Net35/Telerik.JustMock.dll": {}
+        },
+        "runtime": {
+          "lib/Net35/Telerik.JustMock.Container.dll": {},
+          "lib/Net35/Telerik.JustMock.dll": {}
+        }
+      },
+      "JustMock.EntityFramework/2015.3.929.5": {
+        "type": "package",
+        "dependencies": {
+          "JustMock": "2015.3.929.5"
+        },
+        "compile": {
+          "lib/Net45/Telerik.JustMock.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/Telerik.JustMock.EntityFramework.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "NUnit3TestAdapter/3.14.0": {
+        "type": "package",
+        "build": {
+          "build/net35/NUnit3TestAdapter.props": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {},
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {},
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Unity.Abstractions/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Unity.Interception/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Container": "5.11.1"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime.Remoting"
+        ],
+        "compile": {
+          "lib/net47/Unity.Interception.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Interception.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Interfaces/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Ioc/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Unity": "5.11.1",
+          "Unity.Abstractions": "5.11.1",
+          "Unity.Interception": "5.11.1"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Logic/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Ioc": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Repository.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "CommonServiceLocator/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "JustMock/2013.3.1101.2": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.0.0",
+          "Unity": "2.1.505.2"
+        },
+        "compile": {
+          "lib/Net35/Telerik.JustMock.Container.dll": {},
+          "lib/Net35/Telerik.JustMock.dll": {}
+        },
+        "runtime": {
+          "lib/Net35/Telerik.JustMock.Container.dll": {},
+          "lib/Net35/Telerik.JustMock.dll": {}
+        }
+      },
+      "JustMock.EntityFramework/2015.3.929.5": {
+        "type": "package",
+        "dependencies": {
+          "JustMock": "2015.3.929.5"
+        },
+        "compile": {
+          "lib/Net45/Telerik.JustMock.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/Telerik.JustMock.EntityFramework.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "NUnit3TestAdapter/3.14.0": {
+        "type": "package",
+        "build": {
+          "build/net35/NUnit3TestAdapter.props": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {},
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {},
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Unity.Abstractions/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Unity.Interception/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Container": "5.11.1"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime.Remoting"
+        ],
+        "compile": {
+          "lib/net47/Unity.Interception.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Interception.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Interfaces/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Ioc/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Unity": "5.11.1",
+          "Unity.Abstractions": "5.11.1",
+          "Unity.Interception": "5.11.1"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Logic/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Ioc": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Repository.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "CommonServiceLocator/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "JustMock/2013.3.1101.2": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.0.0",
+          "Unity": "2.1.505.2"
+        },
+        "compile": {
+          "lib/Net35/Telerik.JustMock.Container.dll": {},
+          "lib/Net35/Telerik.JustMock.dll": {}
+        },
+        "runtime": {
+          "lib/Net35/Telerik.JustMock.Container.dll": {},
+          "lib/Net35/Telerik.JustMock.dll": {}
+        }
+      },
+      "JustMock.EntityFramework/2015.3.929.5": {
+        "type": "package",
+        "dependencies": {
+          "JustMock": "2015.3.929.5"
+        },
+        "compile": {
+          "lib/Net45/Telerik.JustMock.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/Telerik.JustMock.EntityFramework.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "NUnit3TestAdapter/3.14.0": {
+        "type": "package",
+        "build": {
+          "build/net35/NUnit3TestAdapter.props": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {},
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {},
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Unity.Abstractions/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Unity.Interception/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Container": "5.11.1"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime.Remoting"
+        ],
+        "compile": {
+          "lib/net47/Unity.Interception.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Interception.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Interfaces/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Ioc/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Unity": "5.11.1",
+          "Unity.Abstractions": "5.11.1",
+          "Unity.Interception": "5.11.1"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Logic/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Ioc": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Repository.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "CommonServiceLocator/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "JustMock/2013.3.1101.2": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.0.0",
+          "Unity": "2.1.505.2"
+        },
+        "compile": {
+          "lib/Net35/Telerik.JustMock.Container.dll": {},
+          "lib/Net35/Telerik.JustMock.dll": {}
+        },
+        "runtime": {
+          "lib/Net35/Telerik.JustMock.Container.dll": {},
+          "lib/Net35/Telerik.JustMock.dll": {}
+        }
+      },
+      "JustMock.EntityFramework/2015.3.929.5": {
+        "type": "package",
+        "dependencies": {
+          "JustMock": "2015.3.929.5"
+        },
+        "compile": {
+          "lib/Net45/Telerik.JustMock.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/Telerik.JustMock.EntityFramework.dll": {}
+        }
+      },
+      "NUnit/3.12.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "NUnit3TestAdapter/3.14.0": {
+        "type": "package",
+        "build": {
+          "build/net35/NUnit3TestAdapter.props": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "Unity/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {},
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {},
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Unity.Abstractions/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "lib/net47/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Container.dll": {}
+        }
+      },
+      "Unity.Interception/5.11.1": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Container": "5.11.1"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime.Remoting"
+        ],
+        "compile": {
+          "lib/net47/Unity.Interception.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Unity.Interception.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Interfaces/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Ioc/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Unity": "5.11.1",
+          "Unity.Abstractions": "5.11.1",
+          "Unity.Interception": "5.11.1"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Logic/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Ioc": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0",
+          "Unity.Abstractions": "5.11.1"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CommonServiceLocator/1.0.0": {
+      "sha512": "RJjv0yxm+Fk/ak/CVMTGr0ng7g/nudkVYos4eQrIDpth3BdE1j7J2ddRm8FXtOoIZbgDqTU6hKq5zoackwL3HQ==",
+      "type": "package",
+      "path": "commonservicelocator/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.1.0.0.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/NET35/Microsoft.Practices.ServiceLocation.XML",
+        "lib/NET35/Microsoft.Practices.ServiceLocation.dll",
+        "lib/NET35/Microsoft.Practices.ServiceLocation.pdb",
+        "lib/SL30/Microsoft.Practices.ServiceLocation.XML",
+        "lib/SL30/Microsoft.Practices.ServiceLocation.dll"
+      ]
+    },
+    "EntityFramework/6.2.0": {
+      "sha512": "ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "type": "package",
+      "path": "entityframework/6.2.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.6.2.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
+    "JustMock/2013.3.1101.2": {
+      "sha512": "mdQCg8BGWQ9jFOimVQcXf8CZ9eq0FRRVZDvGfnuim/Usd1gm6xYp9/wlrtVG+Eyk4RXuUgnt4OC+LIb8OnaFGg==",
+      "type": "package",
+      "path": "justmock/2013.3.1101.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LicenseAgreements/License.rtf",
+        "LicenseAgreements/ThirdParty/License.rtf",
+        "LicenseAgreements/ThirdParty/LicenseFree.rtf",
+        "LicenseAgreements/ThirdParty/ThirdParty/Castle Project License.txt",
+        "LicenseAgreements/ThirdParty/ThirdParty/Entity Framework License.txt",
+        "LicenseAgreements/ThirdParty/ThirdParty/IQToolkit.txt",
+        "LicenseAgreements/ThirdParty/ThirdParty/Unity License.txt",
+        "LicenseAgreements/ThirdParty/ThirdParty/WIX_3.5_License.txt",
+        "justmock.2013.3.1101.2.nupkg.sha512",
+        "justmock.nuspec",
+        "lib/Net35/Telerik.JustMock.Container.dll",
+        "lib/Net35/Telerik.JustMock.Container.xml",
+        "lib/Net35/Telerik.JustMock.dll",
+        "lib/Net35/Telerik.JustMock.xml",
+        "lib/SL4/Telerik.JustMock.Silverlight.dll",
+        "lib/SL4/Telerik.JustMock.Silverlight.xml"
+      ]
+    },
+    "JustMock.EntityFramework/2015.3.929.5": {
+      "sha512": "8PzJ/flvwl6DCOBMKP9Sj8rgf/okeIsuNynxHTTLDvkDuph8vC8pr+eqAL0u77fs9jKUEhWde6mBrpe2zXy3Xg==",
+      "type": "package",
+      "path": "justmock.entityframework/2015.3.929.5",
+      "files": [
+        ".nupkg.metadata",
+        "justmock.entityframework.2015.3.929.5.nupkg.sha512",
+        "justmock.entityframework.nuspec",
+        "lib/Net45/Telerik.JustMock.EntityFramework.dll",
+        "lib/Net45/Telerik.JustMock.EntityFramework.xml"
+      ]
+    },
+    "NUnit/3.12.0": {
+      "sha512": "3oJTrcUcT9wmweBUwgUf0f1XIYy6RZq2ziV+RM95HMKAJGsHPN2i3MKK1dAPvDPMRLz799Llj4eyu/STB9Q7OA==",
+      "type": "package",
+      "path": "nunit/3.12.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGES.md",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "build/NUnit.props",
+        "lib/net35/nunit.framework.dll",
+        "lib/net35/nunit.framework.pdb",
+        "lib/net35/nunit.framework.xml",
+        "lib/net40/nunit.framework.dll",
+        "lib/net40/nunit.framework.pdb",
+        "lib/net40/nunit.framework.xml",
+        "lib/net45/nunit.framework.dll",
+        "lib/net45/nunit.framework.pdb",
+        "lib/net45/nunit.framework.xml",
+        "lib/netstandard1.4/nunit.framework.dll",
+        "lib/netstandard1.4/nunit.framework.pdb",
+        "lib/netstandard1.4/nunit.framework.xml",
+        "lib/netstandard2.0/nunit.framework.dll",
+        "lib/netstandard2.0/nunit.framework.pdb",
+        "lib/netstandard2.0/nunit.framework.xml",
+        "nunit.3.12.0.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
+    "NUnit3TestAdapter/3.14.0": {
+      "sha512": "rtwdIVQOvEcDd+EYNG7dStlQEXfevzLBonLYD3mGMuBubBXx+fLYeAkhocKmTxPtZVnLUjuCOPoP3pUHBMUw8A==",
+      "type": "package",
+      "path": "nunit3testadapter/3.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/net35/NUnit3.TestAdapter.dll",
+        "build/net35/NUnit3.TestAdapter.pdb",
+        "build/net35/NUnit3TestAdapter.props",
+        "build/net35/nunit.engine.api.dll",
+        "build/net35/nunit.engine.dll",
+        "build/netcoreapp1.0/NUnit3.TestAdapter.dll",
+        "build/netcoreapp1.0/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp1.0/NUnit3TestAdapter.props",
+        "build/netcoreapp1.0/nunit.engine.api.dll",
+        "build/netcoreapp1.0/nunit.engine.dll",
+        "build/netcoreapp2.0/NUnit3.TestAdapter.dll",
+        "build/netcoreapp2.0/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp2.0/NUnit3TestAdapter.props",
+        "build/netcoreapp2.0/nunit.engine.api.dll",
+        "build/netcoreapp2.0/nunit.engine.dll",
+        "nunit3testadapter.3.14.0.nupkg.sha512",
+        "nunit3testadapter.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.2": {
+      "sha512": "BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Unity/5.11.1": {
+      "sha512": "4LroMtZWLwc2krUsH8IX62fxNoOKb1463wHdtu617iVAOkMaFZ4e4kp6VR7tBi20jxvezlRbknWoeCXWg903yg==",
+      "type": "package",
+      "path": "unity/5.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Abstractions.dll",
+        "lib/net40/Unity.Abstractions.pdb",
+        "lib/net40/Unity.Container.dll",
+        "lib/net40/Unity.Container.pdb",
+        "lib/net45/Unity.Abstractions.dll",
+        "lib/net45/Unity.Abstractions.pdb",
+        "lib/net45/Unity.Container.dll",
+        "lib/net45/Unity.Container.pdb",
+        "lib/net46/Unity.Abstractions.dll",
+        "lib/net46/Unity.Abstractions.pdb",
+        "lib/net46/Unity.Container.dll",
+        "lib/net46/Unity.Container.pdb",
+        "lib/net47/Unity.Abstractions.dll",
+        "lib/net47/Unity.Abstractions.pdb",
+        "lib/net47/Unity.Container.dll",
+        "lib/net47/Unity.Container.pdb",
+        "lib/netcoreapp1.0/Unity.Abstractions.dll",
+        "lib/netcoreapp1.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp1.0/Unity.Container.dll",
+        "lib/netcoreapp1.0/Unity.Container.pdb",
+        "lib/netcoreapp2.0/Unity.Abstractions.dll",
+        "lib/netcoreapp2.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp2.0/Unity.Container.dll",
+        "lib/netcoreapp2.0/Unity.Container.pdb",
+        "lib/netstandard1.0/Unity.Abstractions.dll",
+        "lib/netstandard1.0/Unity.Abstractions.pdb",
+        "lib/netstandard1.0/Unity.Container.dll",
+        "lib/netstandard1.0/Unity.Container.pdb",
+        "lib/netstandard2.0/Unity.Abstractions.dll",
+        "lib/netstandard2.0/Unity.Abstractions.pdb",
+        "lib/netstandard2.0/Unity.Container.dll",
+        "lib/netstandard2.0/Unity.Container.pdb",
+        "unity.5.11.1.nupkg.sha512",
+        "unity.nuspec"
+      ]
+    },
+    "Unity.Abstractions/5.11.1": {
+      "sha512": "R5qJ8KSN2mptSqCG4SHBBs2PcRvo113uu18cNCbcx1nkezYGZnYBNadLPtDODE5KFLQBqLdW9XlaalxU275Qgg==",
+      "type": "package",
+      "path": "unity.abstractions/5.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Abstractions.dll",
+        "lib/net40/Unity.Abstractions.pdb",
+        "lib/net45/Unity.Abstractions.dll",
+        "lib/net45/Unity.Abstractions.pdb",
+        "lib/net46/Unity.Abstractions.dll",
+        "lib/net46/Unity.Abstractions.pdb",
+        "lib/net47/Unity.Abstractions.dll",
+        "lib/net47/Unity.Abstractions.pdb",
+        "lib/netcoreapp1.0/Unity.Abstractions.dll",
+        "lib/netcoreapp1.0/Unity.Abstractions.pdb",
+        "lib/netcoreapp2.0/Unity.Abstractions.dll",
+        "lib/netcoreapp2.0/Unity.Abstractions.pdb",
+        "lib/netstandard1.0/Unity.Abstractions.dll",
+        "lib/netstandard1.0/Unity.Abstractions.pdb",
+        "lib/netstandard2.0/Unity.Abstractions.dll",
+        "lib/netstandard2.0/Unity.Abstractions.pdb",
+        "unity.abstractions.5.11.1.nupkg.sha512",
+        "unity.abstractions.nuspec"
+      ]
+    },
+    "Unity.Container/5.11.1": {
+      "sha512": "pxeataMa9MB/ilLNcmy5OUrcvA2OnPMuMCTsw+zGgRPWx1oxkq6ap5bI+59htjAPe9awPDIU3YVk+yH0sfcOWQ==",
+      "type": "package",
+      "path": "unity.container/5.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Container.dll",
+        "lib/net40/Unity.Container.pdb",
+        "lib/net45/Unity.Container.dll",
+        "lib/net45/Unity.Container.pdb",
+        "lib/net46/Unity.Container.dll",
+        "lib/net46/Unity.Container.pdb",
+        "lib/net47/Unity.Container.dll",
+        "lib/net47/Unity.Container.pdb",
+        "lib/netcoreapp1.0/Unity.Container.dll",
+        "lib/netcoreapp1.0/Unity.Container.pdb",
+        "lib/netcoreapp2.0/Unity.Container.dll",
+        "lib/netcoreapp2.0/Unity.Container.pdb",
+        "lib/netstandard1.0/Unity.Container.dll",
+        "lib/netstandard1.0/Unity.Container.pdb",
+        "lib/netstandard2.0/Unity.Container.dll",
+        "lib/netstandard2.0/Unity.Container.pdb",
+        "unity.container.5.11.1.nupkg.sha512",
+        "unity.container.nuspec"
+      ]
+    },
+    "Unity.Interception/5.11.1": {
+      "sha512": "q2SDcnfy3q6NrYANnV0E2XFPPQ9L+k+Rk3iztJF4vH5QPOeWQ8ooX26BbACPj5DAKUkUMeAdUdiobDkcpFZjBg==",
+      "type": "package",
+      "path": "unity.interception/5.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Unity.Interception.dll",
+        "lib/net45/Unity.Interception.pdb",
+        "lib/net46/Unity.Interception.dll",
+        "lib/net46/Unity.Interception.pdb",
+        "lib/net47/Unity.Interception.dll",
+        "lib/net47/Unity.Interception.pdb",
+        "lib/netcoreapp2.0/Unity.Interception.dll",
+        "lib/netcoreapp2.0/Unity.Interception.pdb",
+        "lib/netstandard2.0/Unity.Interception.dll",
+        "lib/netstandard2.0/Unity.Interception.pdb",
+        "unity.interception.5.11.1.nupkg.sha512",
+        "unity.interception.nuspec"
+      ]
+    },
+    "HospitalManagementSystem.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../HospitalManagementSystem.Interfaces/HospitalManagementSystem.Interfaces.csproj",
+      "msbuildProject": "../HospitalManagementSystem.Interfaces/HospitalManagementSystem.Interfaces.csproj"
+    },
+    "HospitalManagementSystem.Ioc/1.0.0": {
+      "type": "project",
+      "path": "../HospitalManagementSystem.Ioc/HospitalManagementSystem.Ioc.csproj",
+      "msbuildProject": "../HospitalManagementSystem.Ioc/HospitalManagementSystem.Ioc.csproj"
+    },
+    "HospitalManagementSystem.Logic/1.0.0": {
+      "type": "project",
+      "path": "../HospitalManagementSystem.Logic/HospitalManagementSystem.Logic.csproj",
+      "msbuildProject": "../HospitalManagementSystem.Logic/HospitalManagementSystem.Logic.csproj"
+    },
+    "HospitalManagementSystem.Models/1.0.0": {
+      "type": "project",
+      "path": "../HospitalManagementSystem.Models/HospitalManagementSystem.Models.csproj",
+      "msbuildProject": "../HospitalManagementSystem.Models/HospitalManagementSystem.Models.csproj"
+    },
+    "HospitalManagementSystem.Repository/1.0.0": {
+      "type": "project",
+      "path": "../HospitalManagementSystem.Repository/HospitalManagementSystem.Repository.csproj",
+      "msbuildProject": "../HospitalManagementSystem.Repository/HospitalManagementSystem.Repository.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "HospitalManagementSystem.Interfaces >= 1.0.0",
+      "HospitalManagementSystem.Ioc >= 1.0.0",
+      "HospitalManagementSystem.Logic >= 1.0.0",
+      "HospitalManagementSystem.Models >= 1.0.0",
+      "HospitalManagementSystem.Repository >= 1.0.0",
+      "JustMock >= 2013.3.1021",
+      "JustMock.EntityFramework >= 2015.3.929.5",
+      "NUnit >= 3.12.0",
+      "NUnit3TestAdapter >= 3.14.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\": {},
+    "C:\\ProgramData\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Tests\\HospitalManagementSystem.Tests.csproj",
+      "projectName": "HospitalManagementSystem.Tests",
+      "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Tests\\HospitalManagementSystem.Tests.csproj",
+      "packagesPath": "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Tests\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\ProgramData\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Thabiso.Molise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj"
+            },
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj"
+            },
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Logic\\HospitalManagementSystem.Logic.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Logic\\HospitalManagementSystem.Logic.csproj"
+            },
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+            },
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "JustMock": {
+            "target": "Package",
+            "version": "[2013.3.1021, )"
+          },
+          "JustMock.EntityFramework": {
+            "target": "Package",
+            "version": "[2015.3.929.5, )"
+          },
+          "NUnit": {
+            "target": "Package",
+            "version": "[3.12.0, )"
+          },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "[3.14.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "HospitalManagementSystem.Tests depends on JustMock (>= 2013.3.1021) but JustMock 2013.3.1021 was not found. An approximate best match of JustMock 2013.3.1101.2 was resolved.",
+      "libraryId": "JustMock",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: JustMock from 2015.3.929.5 to 2013.3.1101.2. Reference the package directly from the project to select a different version. \r\n HospitalManagementSystem.Tests -> JustMock.EntityFramework 2015.3.929.5 -> JustMock (>= 2015.3.929.5) \r\n HospitalManagementSystem.Tests -> JustMock (>= 2013.3.1021)",
+      "libraryId": "JustMock",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
+}
