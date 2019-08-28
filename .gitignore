@@ -8,3 +8,5 @@
 /obj
 /bin
 /.vs
+/HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj
+/HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/bin/Debug

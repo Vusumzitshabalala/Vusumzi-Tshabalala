@@ -43,19 +43,19 @@ namespace HospitalManagementSystem.Web
             // NOTE: To load from web.config uncomment the line below.
             // Make sure to add a Unity.Configuration to the using statements.
             // container.LoadConfiguration();
+            HospitalManagementSystemContext hospitalManagementSystemContext = new HospitalManagementSystemContext();
 
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
-            //container.RegisterType<IPatientRepository, PatientRepository>();
-            //container.RegisterType<IPatientRegistration, PatientRegistration>();
-            //container.RegisterType<IPatientRetriever, PatientRetriever>();
+            container.RegisterType<IPatientRepository, PatientRepository>();
+            container.RegisterType<IPatientRegistration, PatientRegistration>();
+            container.RegisterType<IPatientRetriever, PatientRetriever>();
+            container.RegisterInstance(hospitalManagementSystemContext);
+            //TypeFactory.RegisterType<IPatientRepository,PatientRepository>();
+            //TypeFactory.RegisterType<IPatientRegistration, PatientRegistration>();
+            //TypeFactory.RegisterType<IPatientRetriever, PatientRetriever>();
 
-            TypeFactory.RegisterType<IPatientRepository,PatientRepository>();
-            TypeFactory.RegisterType<IPatientRegistration, PatientRegistration>();
-            TypeFactory.RegisterType<IPatientRetriever, PatientRetriever>();
-
-            HospitalManagementSystemContext HospitalManagementSystemContext = new HospitalManagementSystemContext();
-            TypeFactory.RegisterInstance(HospitalManagementSystemContext);
+            //TypeFactory.RegisterInstance(HospitalManagementSystemContext);
 
         }
     }

@@ -19,15 +19,14 @@ namespace HospitalManagementSystem.Repository
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Person>().HasKey(p => p.GenderId);
-            modelBuilder.Entity<Person>().HasKey(p => p.RaceId);
-            modelBuilder.Entity<Person>().HasKey(p => p.NationalityId);
+            modelBuilder.Entity<Person>().HasKey(p => p.Id);
+            //modelBuilder.Entity<Person>().HasKey(p => p.GenderId);
+            //modelBuilder.Entity<Person>().HasKey(p => p.RaceId);
+            //modelBuilder.Entity<Person>().HasKey(p => p.NationalityId);
             modelBuilder.Entity<Doctor>().HasKey(p => p.PersonId);
             modelBuilder.Entity<Nurse>().HasKey(p => p.PersonId);
             modelBuilder.Entity<Patient>().HasKey(p => p.PersonId);
             modelBuilder.Entity<Hospital>().HasKey(p => p.ProvinceId);
-
-
         }
 
         public DbSet<Person> Person { get; set; }

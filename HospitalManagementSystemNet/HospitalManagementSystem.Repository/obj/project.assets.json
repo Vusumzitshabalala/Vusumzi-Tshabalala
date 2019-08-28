@@ -750,11 +750,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj",
       "projectName": "HospitalManagementSystem.Repository",
-      "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj",
+      "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj",
       "packagesPath": "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\obj\\",
+      "outputPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -775,14 +775,14 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj"
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj"
             },
-            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
-              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj"
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj"
             },
-            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
-              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Sepetlele\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
             }
           }
         }

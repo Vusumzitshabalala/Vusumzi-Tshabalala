@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -18,11 +19,16 @@ namespace HospitalManagementSystem.Models
 
         [StringLength(100)]
         public String Name{ get; set; }
+
         public string Surname { get; set; }
+
+        [DisplayName("Date Of Birth")]
         public DateTime DateOfBirth { get; set; }
-       
+
+        [DisplayName("ID Number")]
         public string IdentityNumber { get; set; }
 
+        [DisplayName("Nationality")]
         public int NationalityId { get; set; }
 
         [ForeignKey("NationalityId")]
@@ -30,10 +36,14 @@ namespace HospitalManagementSystem.Models
 
         [ForeignKey("RaceId")]
         public Race Race { get; set; }
+
+        [DisplayName("Race")]
         public int RaceId { get; set; }
 
         [ForeignKey("GenderId")]
         public  Gender Gender { get; set; }
+
+        [DisplayName("Gender")]
         public int GenderId { get; set; }
 
 
