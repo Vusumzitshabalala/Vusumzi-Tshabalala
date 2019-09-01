@@ -22,7 +22,7 @@ namespace HospitalManagementSystem.Repository
             catch (System.Exception ex)
             {
 
-                throw;
+                throw ex;
             }
            
         }

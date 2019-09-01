@@ -93,6 +93,7 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "HospitalManagementSystem.Models": "1.0.0"
         },
@@ -120,6 +121,7 @@
       },
       "HospitalManagementSystem.Models/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         },
@@ -220,6 +222,7 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "HospitalManagementSystem.Models": "1.0.0"
         },
@@ -247,6 +250,7 @@
       },
       "HospitalManagementSystem.Models/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         },
@@ -347,6 +351,7 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "HospitalManagementSystem.Models": "1.0.0"
         },
@@ -374,6 +379,7 @@
       },
       "HospitalManagementSystem.Models/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         },
@@ -474,6 +480,7 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "HospitalManagementSystem.Models": "1.0.0"
         },
@@ -501,6 +508,7 @@
       },
       "HospitalManagementSystem.Models/1.0.0": {
         "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         },

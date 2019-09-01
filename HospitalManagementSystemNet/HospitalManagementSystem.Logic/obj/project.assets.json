@@ -1,0 +1,180 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "HospitalManagementSystem.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "HospitalManagementSystem.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "HospitalManagementSystem.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "HospitalManagementSystem.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HospitalManagementSystem.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../HospitalManagementSystem.Interfaces/HospitalManagementSystem.Interfaces.csproj",
+      "msbuildProject": "../HospitalManagementSystem.Interfaces/HospitalManagementSystem.Interfaces.csproj"
+    },
+    "HospitalManagementSystem.Models/1.0.0": {
+      "type": "project",
+      "path": "../HospitalManagementSystem.Models/HospitalManagementSystem.Models.csproj",
+      "msbuildProject": "../HospitalManagementSystem.Models/HospitalManagementSystem.Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "HospitalManagementSystem.Interfaces >= 1.0.0",
+      "HospitalManagementSystem.Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\": {},
+    "C:\\ProgramData\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Logic\\HospitalManagementSystem.Logic.csproj",
+      "projectName": "HospitalManagementSystem.Logic",
+      "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Logic\\HospitalManagementSystem.Logic.csproj",
+      "packagesPath": "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Logic\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\ProgramData\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Thabiso.Molise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj"
+            },
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

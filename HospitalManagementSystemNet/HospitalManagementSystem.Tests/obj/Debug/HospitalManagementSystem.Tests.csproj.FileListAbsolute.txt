@@ -80,11 +80,8 @@ C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystem
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\nunit.engine.api.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\HospitalManagementSystem.Tests.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\HospitalManagementSystem.Tests.pdb
-C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
-C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\EntityFramework.dll
-C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\Telerik.JustMock.Container.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\Telerik.JustMock.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\Telerik.JustMock.EntityFramework.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\nunit.framework.dll
@@ -112,3 +109,6 @@ C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystem
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\obj\Debug\HospitalManagementSystem.Tests.csproj.CopyComplete
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\obj\Debug\HospitalManagementSystem.Tests.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\obj\Debug\HospitalManagementSystem.Tests.pdb
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\System.Security.Permissions.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\System.Security.Principal.Windows.dll

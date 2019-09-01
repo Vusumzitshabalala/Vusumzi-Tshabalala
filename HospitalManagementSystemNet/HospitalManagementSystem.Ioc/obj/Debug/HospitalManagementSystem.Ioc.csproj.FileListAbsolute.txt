@@ -37,8 +37,8 @@ C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystem
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\bin\Debug\Unity.Container.pdb
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\bin\Debug\Unity.Interception.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\bin\Debug\Unity.Interception.pdb
-C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\obj\Debug\HospitalManagementSystem.Ioc.csprojAssemblyReference.cache
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\obj\Debug\HospitalManagementSystem.Ioc.csproj.CoreCompileInputs.cache
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\obj\Debug\HospitalManagementSystem.Ioc.csproj.CopyComplete
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\obj\Debug\HospitalManagementSystem.Ioc.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\obj\Debug\HospitalManagementSystem.Ioc.pdb
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\obj\Debug\HospitalManagementSystem.Ioc.csprojAssemblyReference.cache

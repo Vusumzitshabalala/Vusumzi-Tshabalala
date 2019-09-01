@@ -10,6 +10,25 @@
         "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj",
         "projectName": "HospitalManagementSystem.Interfaces",
         "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thabiso.Molise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
           "net472": {
             "projectReferences": {
@@ -22,6 +41,17 @@
       },
       "frameworks": {
         "net472": {}
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
       }
     },
     "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
@@ -91,6 +121,25 @@
         "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Logic\\HospitalManagementSystem.Logic.csproj",
         "projectName": "HospitalManagementSystem.Logic",
         "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Logic\\HospitalManagementSystem.Logic.csproj",
+        "packagesPath": "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Logic\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thabiso.Molise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
           "net472": {
             "projectReferences": {
@@ -106,6 +155,17 @@
       },
       "frameworks": {
         "net472": {}
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
       }
     },
     "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
@@ -113,10 +173,45 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj",
         "projectName": "HospitalManagementSystem.Models",
-        "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+        "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj",
+        "packagesPath": "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thabiso.Molise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
       },
       "frameworks": {
         "net472": {}
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
       }
     },
     "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj": {
@@ -238,7 +333,7 @@
           "dependencies": {
             "JustMock": {
               "target": "Package",
-              "version": "[2013.3.1021, )"
+              "version": "[2019.2.620.1, )"
             },
             "JustMock.EntityFramework": {
               "target": "Package",
@@ -250,7 +345,7 @@
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[3.14.0, )"
+              "version": "[3.15.1, )"
             }
           }
         }
