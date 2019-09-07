@@ -5,6 +5,11 @@ namespace HospitalManagementSystem.Models
     public class Doctor
             
     {
+        public Doctor()
+        {
+            Person = new Person();
+        }
+
         public int PersonId { get; set; }
 
         [ForeignKey("PersonId")]
