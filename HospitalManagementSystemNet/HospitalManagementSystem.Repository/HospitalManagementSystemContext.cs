@@ -8,6 +8,8 @@ namespace HospitalManagementSystem.Repository
 {
     public class HospitalManagementSystemContext: DbContext
     {
+        internal object doctor;
+
         public HospitalManagementSystemContext(bool initialise = false)
         {
             if (initialise == true)

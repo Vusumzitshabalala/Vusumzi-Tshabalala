@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <ul>
+                <li>
+                    @Html.ActionLink("Create Patient", "Index", "Index")
+                </li>
+                <li>
+                    @Html.ActionLink("Create Doctor", "DoctorInfo", "Doctor")
+                </li>
+                <li>
+                    @Html.ActionLink("View Patients", "Index", "Index")
+                </li>
+                <li>
+                    @Html.ActionLink("View Doctors", "Index", "Doctor")
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

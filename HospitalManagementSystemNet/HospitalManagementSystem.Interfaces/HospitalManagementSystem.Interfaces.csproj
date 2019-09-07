@@ -41,10 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IDoctorRegistration.cs" />
+    <Compile Include="IDoctorRepository.cs" />
+    <Compile Include="IDoctorRetriever.cs" />
     <Compile Include="IPatientRegistration.cs" />
     <Compile Include="IPatientRepository.cs" />
     <Compile Include="IPatientRetriever.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stringIdNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HospitalManagementSystem.Models\HospitalManagementSystem.Models.csproj">
