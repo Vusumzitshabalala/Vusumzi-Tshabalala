@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DoctorRespository.cs" />
+    <Compile Include="DoctorType.cs" />
     <Compile Include="HospitalManagementSystemContext.cs" />
     <Compile Include="PatientRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

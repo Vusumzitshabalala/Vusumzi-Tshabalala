@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Doctor.cs" />
+    <Compile Include="DoctorType.cs" />
     <Compile Include="Gender.cs" />
     <Compile Include="Hospital.cs" />
     <Compile Include="LookUp.cs" />
