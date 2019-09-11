@@ -197,6 +197,9 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
         },
@@ -222,13 +225,23 @@
       "HospitalManagementSystem.Logic/1.0.0": {
         "type": "project",
         "dependencies": {
-          "HospitalManagementSystem.Interfaces": "1.0.0"
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
         },
         "runtime": {
           "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         }
       },
       "HospitalManagementSystem.Repository/1.0.0": {
@@ -238,6 +251,7 @@
           "EntityFramework": "6.2.0",
           "HospitalManagementSystem.Interfaces": "1.0.0",
           "HospitalManagementSystem.Ioc": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0",
           "Unity.Abstractions": "5.11.1"
         },
         "compile": {
@@ -432,6 +446,9 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
         },
@@ -457,13 +474,23 @@
       "HospitalManagementSystem.Logic/1.0.0": {
         "type": "project",
         "dependencies": {
-          "HospitalManagementSystem.Interfaces": "1.0.0"
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
         },
         "runtime": {
           "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         }
       },
       "HospitalManagementSystem.Repository/1.0.0": {
@@ -473,6 +500,7 @@
           "EntityFramework": "6.2.0",
           "HospitalManagementSystem.Interfaces": "1.0.0",
           "HospitalManagementSystem.Ioc": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0",
           "Unity.Abstractions": "5.11.1"
         },
         "compile": {
@@ -667,6 +695,9 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
         },
@@ -692,13 +723,23 @@
       "HospitalManagementSystem.Logic/1.0.0": {
         "type": "project",
         "dependencies": {
-          "HospitalManagementSystem.Interfaces": "1.0.0"
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
         },
         "runtime": {
           "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         }
       },
       "HospitalManagementSystem.Repository/1.0.0": {
@@ -708,6 +749,7 @@
           "EntityFramework": "6.2.0",
           "HospitalManagementSystem.Interfaces": "1.0.0",
           "HospitalManagementSystem.Ioc": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0",
           "Unity.Abstractions": "5.11.1"
         },
         "compile": {
@@ -902,6 +944,9 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
         },
@@ -927,13 +972,23 @@
       "HospitalManagementSystem.Logic/1.0.0": {
         "type": "project",
         "dependencies": {
-          "HospitalManagementSystem.Interfaces": "1.0.0"
+          "HospitalManagementSystem.Interfaces": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
         },
         "runtime": {
           "bin/placeholder/HospitalManagementSystem.Logic.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         }
       },
       "HospitalManagementSystem.Repository/1.0.0": {
@@ -943,6 +998,7 @@
           "EntityFramework": "6.2.0",
           "HospitalManagementSystem.Interfaces": "1.0.0",
           "HospitalManagementSystem.Ioc": "1.0.0",
+          "HospitalManagementSystem.Models": "1.0.0",
           "Unity.Abstractions": "5.11.1"
         },
         "compile": {
@@ -1375,6 +1431,11 @@
       "path": "../HospitalManagementSystem.Logic/HospitalManagementSystem.Logic.csproj",
       "msbuildProject": "../HospitalManagementSystem.Logic/HospitalManagementSystem.Logic.csproj"
     },
+    "HospitalManagementSystem.Models/1.0.0": {
+      "type": "project",
+      "path": "../HospitalManagementSystem.Models/HospitalManagementSystem.Models.csproj",
+      "msbuildProject": "../HospitalManagementSystem.Models/HospitalManagementSystem.Models.csproj"
+    },
     "HospitalManagementSystem.Repository/1.0.0": {
       "type": "project",
       "path": "../HospitalManagementSystem.Repository/HospitalManagementSystem.Repository.csproj",
@@ -1386,6 +1447,7 @@
       "HospitalManagementSystem.Interfaces >= 1.0.0",
       "HospitalManagementSystem.Ioc >= 1.0.0",
       "HospitalManagementSystem.Logic >= 1.0.0",
+      "HospitalManagementSystem.Models >= 1.0.0",
       "HospitalManagementSystem.Repository >= 1.0.0",
       "JustMock >= 2019.2.620.1",
       "JustMock.EntityFramework >= 2015.3.929.5",
@@ -1433,6 +1495,9 @@
             },
             "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Logic\\HospitalManagementSystem.Logic.csproj": {
               "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Logic\\HospitalManagementSystem.Logic.csproj"
+            },
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
             },
             "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj": {
               "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj"

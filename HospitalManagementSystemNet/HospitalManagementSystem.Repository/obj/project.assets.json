@@ -93,6 +93,9 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
         },
@@ -113,6 +116,15 @@
         },
         "runtime": {
           "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         }
       }
     },
@@ -208,6 +220,9 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
         },
@@ -228,6 +243,15 @@
         },
         "runtime": {
           "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         }
       }
     },
@@ -323,6 +347,9 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
         },
@@ -343,6 +370,15 @@
         },
         "runtime": {
           "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         }
       }
     },
@@ -438,6 +474,9 @@
       },
       "HospitalManagementSystem.Interfaces/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "HospitalManagementSystem.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HospitalManagementSystem.Interfaces.dll": {}
         },
@@ -458,6 +497,15 @@
         },
         "runtime": {
           "bin/placeholder/HospitalManagementSystem.Ioc.dll": {}
+        }
+      },
+      "HospitalManagementSystem.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HospitalManagementSystem.Models.dll": {}
         }
       }
     }
@@ -679,6 +727,11 @@
       "type": "project",
       "path": "../HospitalManagementSystem.Ioc/HospitalManagementSystem.Ioc.csproj",
       "msbuildProject": "../HospitalManagementSystem.Ioc/HospitalManagementSystem.Ioc.csproj"
+    },
+    "HospitalManagementSystem.Models/1.0.0": {
+      "type": "project",
+      "path": "../HospitalManagementSystem.Models/HospitalManagementSystem.Models.csproj",
+      "msbuildProject": "../HospitalManagementSystem.Models/HospitalManagementSystem.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -686,6 +739,7 @@
       "EntityFramework >= 6.2.0",
       "HospitalManagementSystem.Interfaces >= 1.0.0",
       "HospitalManagementSystem.Ioc >= 1.0.0",
+      "HospitalManagementSystem.Models >= 1.0.0",
       "Unity.Abstractions >= 5.11.1"
     ]
   },
@@ -726,6 +780,9 @@
             },
             "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
               "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj"
+            },
+            "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
+              "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
             }
           }
         }
