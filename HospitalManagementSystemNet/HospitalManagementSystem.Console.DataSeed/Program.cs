@@ -75,6 +75,29 @@ namespace HospitalManagementSystem.Console.DataSeed
                 }
             });
 
+            hospitalManagementSystemContext.DoctorType.AddRange(new List<DoctorType>() {
+                new DoctorType
+                {
+                    Id = 1,
+                    Name = "Anesthesiologist"
+                },
+                new DoctorType()
+                {
+                    Id = 2,
+                    Name = "immunologist"
+                },
+                new DoctorType()
+                {
+                    Id = 3,
+                    Name = "medicine specialist"
+                },
+                new DoctorType()
+                {
+                    Id = 4,
+                    Name = "psychiatrist"
+                }
+            });
+
             hospitalManagementSystemContext.SaveChanges();
 
             System.Console.WriteLine("Hospital Management System Data Inserted");

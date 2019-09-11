@@ -42,3 +42,14 @@ C:\Users\stshabalala\Source\Repo\HospitalManagementSystemNet\HospitalManagementS
 C:\Users\stshabalala\Source\Repo\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.csproj.CopyComplete
 C:\Users\stshabalala\Source\Repo\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.dll
 C:\Users\stshabalala\Source\Repo\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\bin\Debug\HospitalManagementSystem.Logic.dll
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\bin\Debug\HospitalManagementSystem.Logic.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\bin\Debug\HospitalManagementSystem.Interfaces.dll
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\bin\Debug\HospitalManagementSystem.Models.dll
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\bin\Debug\HospitalManagementSystem.Interfaces.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\bin\Debug\HospitalManagementSystem.Models.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.csprojAssemblyReference.cache
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.csproj.CoreCompileInputs.cache
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.csproj.CopyComplete
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.dll
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.pdb

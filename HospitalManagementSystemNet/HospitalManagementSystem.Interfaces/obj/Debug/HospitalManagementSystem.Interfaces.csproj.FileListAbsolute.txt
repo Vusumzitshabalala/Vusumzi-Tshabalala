@@ -34,3 +34,12 @@ C:\Users\stshabalala\Source\Repo\HospitalManagementSystemNet\HospitalManagementS
 C:\Users\stshabalala\Source\Repo\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.csproj.CopyComplete
 C:\Users\stshabalala\Source\Repo\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.dll
 C:\Users\stshabalala\Source\Repo\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\bin\Debug\HospitalManagementSystem.Interfaces.dll
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\bin\Debug\HospitalManagementSystem.Interfaces.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\bin\Debug\HospitalManagementSystem.Models.dll
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\bin\Debug\HospitalManagementSystem.Models.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.csprojAssemblyReference.cache
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.csproj.CopyComplete
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.dll
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.pdb

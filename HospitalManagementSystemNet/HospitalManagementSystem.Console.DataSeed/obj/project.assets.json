@@ -822,11 +822,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stshabalala\\source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\HospitalManagementSystem.Console.DataSeed.csproj",
+      "projectUniqueName": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\HospitalManagementSystem.Console.DataSeed.csproj",
       "projectName": "HospitalManagementSystem.Console.DataSeed",
-      "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\HospitalManagementSystem.Console.DataSeed.csproj",
+      "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\HospitalManagementSystem.Console.DataSeed.csproj",
       "packagesPath": "C:\\Users\\stshabalala\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stshabalala\\source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\obj\\",
+      "outputPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -843,14 +843,14 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "C:\\Users\\stshabalala\\source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
-              "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj"
+            "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
+              "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj"
             },
-            "C:\\Users\\stshabalala\\source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
-              "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+            "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
+              "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
             },
-            "C:\\Users\\stshabalala\\source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj": {
-              "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj"
+            "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj": {
+              "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj"
             }
           }
         }

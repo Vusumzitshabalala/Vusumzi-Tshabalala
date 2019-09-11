@@ -503,11 +503,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stshabalala\\Source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj",
+      "projectUniqueName": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj",
       "projectName": "HospitalManagementSystem.Ioc",
-      "projectPath": "C:\\Users\\stshabalala\\Source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj",
+      "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj",
       "packagesPath": "C:\\Users\\stshabalala\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stshabalala\\Source\\Repo\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\obj\\",
+      "outputPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
