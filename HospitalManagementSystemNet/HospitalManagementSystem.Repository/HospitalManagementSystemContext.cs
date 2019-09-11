@@ -8,8 +8,6 @@ namespace HospitalManagementSystem.Repository
 {
     public class HospitalManagementSystemContext: DbContext
     {
-        internal object doctor;
-
         public HospitalManagementSystemContext(bool initialise = false)
         {
             if (initialise == true)
@@ -21,7 +19,7 @@ namespace HospitalManagementSystem.Repository
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Person>().HasKey(p => p.Id);
+            //modelBuilder.Entity<Person>().HasKey(p => p.Id);
             //modelBuilder.Entity<Person>().HasKey(p => p.GenderId);
             //modelBuilder.Entity<Person>().HasKey(p => p.RaceId);
             //modelBuilder.Entity<Person>().HasKey(p => p.NationalityId);
@@ -29,8 +27,7 @@ namespace HospitalManagementSystem.Repository
             modelBuilder.Entity<Doctor>().HasKey(p => p.PersonId);
             modelBuilder.Entity<Nurse>().HasKey(p => p.PersonId);
             modelBuilder.Entity<Patient>().HasKey(p => p.PersonId);
-            modelBuilder.Entity<Hospital>().HasKey(p => p.ProvinceId);
-            modelBuilder.Entity<DoctorType>().HasKey(p => p.DoctorTypeId);
+            //modelBuilder.Entity<Hospital>().HasKey(p => p.ProvinceId);
         }
 
         public DbSet<Person> Person { get; set; }
@@ -50,6 +47,7 @@ namespace HospitalManagementSystem.Repository
         public DbSet<Province> Province { get; set; }
 
         public DbSet<Hospital> Hospital { get; set; }
+
         public DbSet<DoctorType> DoctorType { get; set; }
        
     }

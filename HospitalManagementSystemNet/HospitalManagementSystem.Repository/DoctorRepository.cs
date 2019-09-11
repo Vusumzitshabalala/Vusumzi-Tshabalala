@@ -16,7 +16,6 @@ namespace HospitalManagementSystem.Repository
             try
             {
                 using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
-                //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
                 {
                     context.Doctor.Add(doctor);
                     context.SaveChanges();
@@ -34,7 +33,6 @@ namespace HospitalManagementSystem.Repository
            Doctor result = null;
         
                 using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
-                //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
                 {
                     result = context.Doctor.FirstOrDefault(p => p.Person.IdentityNumber == identityNumber);
                 }

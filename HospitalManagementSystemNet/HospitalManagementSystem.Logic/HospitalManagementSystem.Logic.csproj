@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DoctorRegistration.cs" />
-    <Compile Include="doctorRepository\Retrieve.cs" />
     <Compile Include="DoctorRetriever.cs" />
     <Compile Include="PatientRegistration.cs" />
     <Compile Include="PatientRetriever.cs" />
