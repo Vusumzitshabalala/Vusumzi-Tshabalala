@@ -3,3 +3,5 @@ C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystem
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.csproj.CoreCompileInputs.cache
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.csproj.CoreCompileInputs.cache
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.csprojAssemblyReference.cache

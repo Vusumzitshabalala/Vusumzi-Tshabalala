@@ -43,8 +43,12 @@
   <ItemGroup>
     <Compile Include="DoctorRegistration.cs" />
     <Compile Include="DoctorRetriever.cs" />
+    <Compile Include="NurseRegistration.cs" />
+    <Compile Include="NurseRetriever.cs" />
     <Compile Include="PatientRegistration.cs" />
     <Compile Include="PatientRetriever.cs" />
+    <Compile Include="PorterRegistration.cs" />
+    <Compile Include="PorterRetriever1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

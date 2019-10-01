@@ -36,7 +36,6 @@ namespace HospitalManagementSystem.Repository
             {
                result = context.Patient.FirstOrDefault(p => p.Person.IdentityNumber == identityNumber);
             }
-
             return result;
         }
     }

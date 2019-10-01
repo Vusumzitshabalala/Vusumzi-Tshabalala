@@ -21,3 +21,5 @@ C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystem
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.csproj.CopyComplete
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.csprojAssemblyReference.cache
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.csproj.CoreCompileInputs.cache

@@ -29,29 +29,6 @@ namespace HospitalManagementSystem.Console.DataSeed
                 }
             });
 
-            hospitalManagementSystemContext.Race.AddRange(new List<Race>() {
-                new Race()
-                {
-                    Id = 1,
-                    Name = "Black"
-                },
-                new Race()
-                {
-                    Id = 2,
-                    Name = "Indian"
-                },
-                new Race()
-                {
-                    Id = 3,
-                    Name = "COloured"
-                },
-                new Race()
-                {
-                    Id = 4,
-                    Name = "White"
-                }
-            });
-
             hospitalManagementSystemContext.Nationality.AddRange(new List<Nationality>() {
                 new Nationality()
                 {
@@ -95,8 +72,22 @@ namespace HospitalManagementSystem.Console.DataSeed
                 {
                     Id = 4,
                     Name = "psychiatrist"
+                },
+                new DoctorType()
+                {
+                    Id = 5,
+                    Name = "Cardiologist"
+                },
+                new DoctorType()
+
+                {
+                    Id = 6,
+                    Name = "Cardiovascular surgeon"
                 }
+                
+               
             });
+            
 
             hospitalManagementSystemContext.SaveChanges();
 

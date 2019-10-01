@@ -9,3 +9,5 @@ C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystem
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.csproj.CopyComplete
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.csproj.CoreCompileInputs.cache
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.csprojAssemblyReference.cache

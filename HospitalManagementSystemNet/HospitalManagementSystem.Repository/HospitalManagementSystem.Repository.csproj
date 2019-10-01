@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministratorRepository.cs" />
     <Compile Include="DoctorRepository.cs" />
     <Compile Include="HospitalManagementSystemContext.cs" />
+    <Compile Include="HospitalRepository.cs" />
+    <Compile Include="NurseRepository.cs" />
     <Compile Include="PatientRepository.cs" />
+    <Compile Include="PorterRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
