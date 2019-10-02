@@ -49,7 +49,9 @@ namespace HospitalManagementSystem.Repository
         public DbSet<Hospital> Hospital { get; set; }
 
         public DbSet<DoctorType> DoctorType { get; set; }
-        public object Porter { get; internal set; }
-        public object Administrator { get; internal set; }
+
+        public DbSet<Porter> Porter { get;  set; }
+
+        public DbSet<Administrator> Administrator { get;  set; }
     }
 }

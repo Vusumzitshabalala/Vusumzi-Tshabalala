@@ -7,7 +7,7 @@ namespace HospitalManagementSystem.Models
     {
         public Department()
         {
-            Person = new Department();
+            Person = new Person();
         }
 
         public int PersonId { get; set; }
