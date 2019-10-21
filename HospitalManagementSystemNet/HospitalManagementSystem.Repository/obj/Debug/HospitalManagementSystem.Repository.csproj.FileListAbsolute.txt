@@ -21,8 +21,6 @@ C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystem
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.csproj.CopyComplete
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.pdb
-C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.csprojAssemblyReference.cache
-C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.csproj.CoreCompileInputs.cache
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\bin\Debug\HospitalManagementSystem.Repository.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\bin\Debug\HospitalManagementSystem.Repository.pdb
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\bin\Debug\EntityFramework.SqlServer.dll
@@ -41,6 +39,8 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\bin\Debug\HospitalManagementSystem.Interfaces.pdb
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\bin\Debug\HospitalManagementSystem.Ioc.pdb
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\bin\Debug\HospitalManagementSystem.Models.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.csprojAssemblyReference.cache
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.csproj.CoreCompileInputs.cache
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.csproj.CopyComplete
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.pdb

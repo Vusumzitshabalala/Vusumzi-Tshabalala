@@ -1,6 +1,7 @@
 ﻿using HospitalManagementSystem.Interfaces;
 using HospitalManagementSystem.Ioc;
 using HospitalManagementSystem.Models;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace HospitalManagementSystem.Repository
@@ -36,6 +37,19 @@ namespace HospitalManagementSystem.Repository
             {
                result = context.Patient.FirstOrDefault(p => p.Person.IdentityNumber == identityNumber);
             }
+            return result;
+        }
+
+        public List<Patient> GetAllPatients()
+        {
+            List<Patient> result = null;
+
+            using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
+            //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
+            {
+                result = context.Patient.ToList();
+            }
+
             return result;
         }
     }

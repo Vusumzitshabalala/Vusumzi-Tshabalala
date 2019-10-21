@@ -1,10 +1,5 @@
 ﻿using HospitalManagementSystem.Interfaces;
 using HospitalManagementSystem.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HospitalManagementSystem.Logic
 {
@@ -18,15 +13,11 @@ namespace HospitalManagementSystem.Logic
         public Porter Porter { get; private set; }
         public IPorterRepository PorterRepository { get; }
 
-
         public void Retrieve(string identityNumber)
         {
             Porter = PorterRepository.Retrieve(identityNumber);
         }
 
-
     }
-
-
 
 }

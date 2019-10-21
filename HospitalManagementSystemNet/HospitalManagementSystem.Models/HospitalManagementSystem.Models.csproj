@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrator.cs" />
-    <Compile Include="Department.cs" />
     <Compile Include="Doctor.cs" />
     <Compile Include="DoctorType.cs" />
     <Compile Include="Gender.cs" />

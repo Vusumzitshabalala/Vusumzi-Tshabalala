@@ -126,7 +126,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Views\Doctor\DoctorInfo.cshtml" />
     <None Include="Scripts\jquery-3.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -139,9 +138,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Views\Doctor\CreateDoctor.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Index\Index.cshtml" />
+    <Content Include="Views\Index\CreatePatient.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -161,6 +161,19 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Person.cshtml" />
+    <Content Include="Views\Index\ViewPatients.cshtml" />
+    <Content Include="Views\Index\Index.cshtml" />
+    <Content Include="Views\Doctor\Index.cshtml" />
+    <Content Include="Views\Doctor\ViewDoctors.cshtml" />
+    <Content Include="Views\Nurse\Index.cshtml" />
+    <Content Include="Views\Nurse\CreateNurse.cshtml" />
+    <Content Include="Views\Nurse\ViewNurses.cshtml" />
+    <Content Include="Views\Administrator\CreateAdministrator.cshtml" />
+    <Content Include="Views\Porter\CreatePorter.cshtml" />
+    <Content Include="Views\Administrator\Index.cshtml" />
+    <Content Include="Views\Porter\Index.cshtml" />
+    <Content Include="Views\Administrator\ViewAdministrators.cshtml" />
+    <Content Include="Views\Porter\ViewPorters.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -171,9 +184,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Administrator\" />
-    <Folder Include="Views\Nurse\" />
-    <Folder Include="Views\Porter\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HospitalManagementSystem.Interfaces\HospitalManagementSystem.Interfaces.csproj">

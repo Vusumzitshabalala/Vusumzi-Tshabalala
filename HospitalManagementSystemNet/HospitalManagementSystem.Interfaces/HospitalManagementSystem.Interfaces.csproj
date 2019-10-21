@@ -41,14 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IHospitalRegistration.cs" />
     <Compile Include="IAdministorRegistration.cs" />
     <Compile Include="IAdministratorRepository.cs" />
     <Compile Include="IAdministratorRetriever.cs" />
+    <Compile Include="IAdministratorsRetriever.cs" />
     <Compile Include="IDoctorRegistration.cs" />
     <Compile Include="IDoctorRepository.cs" />
     <Compile Include="IDoctorRetriever.cs" />
-    <Compile Include="IHospitalRetriever.cs" />
+    <Compile Include="IDoctorsRetriever.cs" />
+    <Compile Include="INursesRetriever.cs" />
+    <Compile Include="IPatientsRetriever.cs" />
     <Compile Include="IPorterRetriever.cs" />
     <Compile Include="IPorterRepository.cs" />
     <Compile Include="INurseRegistration.cs" />
@@ -58,6 +60,7 @@
     <Compile Include="IPatientRepository.cs" />
     <Compile Include="IPatientRetriever.cs" />
     <Compile Include="IPorterRegistration.cs" />
+    <Compile Include="IPortersRetriever.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

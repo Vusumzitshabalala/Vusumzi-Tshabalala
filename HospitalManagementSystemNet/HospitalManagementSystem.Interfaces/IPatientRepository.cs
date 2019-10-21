@@ -1,4 +1,5 @@
-﻿using HospitalManagementSystem.Models;
+﻿using System.Collections.Generic;
+using HospitalManagementSystem.Models;
 
 namespace HospitalManagementSystem.Interfaces
 {
@@ -6,5 +7,6 @@ namespace HospitalManagementSystem.Interfaces
     {
         void SavePatient(Patient patient);
         Patient Retrieve(string identityNumber);
+        List<Patient> GetAllPatients();
     }
 }

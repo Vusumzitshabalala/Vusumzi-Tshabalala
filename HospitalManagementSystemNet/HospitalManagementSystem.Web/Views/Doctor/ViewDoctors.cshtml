@@ -1,0 +1,28 @@
+﻿@model List<HospitalManagementSystem.Models.Doctor>
+@{
+    ViewBag.Title = "ViewDoctors";
+    Layout = "..\\Shared\\_Layout.cshtml";
+}
+
+<h2>View Doctors</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">Name</div>
+        <div class="col-xs-12">Surname</div>
+        <div class="col-xs-12">Diagonosis</div>
+        <div class="col-xs-12">Prescription</div>
+        <div class="col-xs-12"><a href=""></a></div>
+    </div>
+
+    @foreach (var doctor in Model)
+    {
+        <div class="row">
+            <div class="col-xs-12">@doctor.Person?.Name</div>
+            <div class="col-xs-12">>@doctor.Person?.Surname</div>
+           
+           
+            <div class="col-xs-12"><a href=""> Delete </a> </div>
+        </div>
+    }
+
+</div>

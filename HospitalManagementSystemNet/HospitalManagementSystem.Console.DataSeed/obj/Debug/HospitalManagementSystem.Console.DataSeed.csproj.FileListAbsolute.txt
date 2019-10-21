@@ -24,8 +24,6 @@ C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystem
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.csproj.CopyComplete
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.exe
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.pdb
-C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.csprojAssemblyReference.cache
-C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.csproj.CoreCompileInputs.cache
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\bin\Debug\HospitalManagementSystem.Console.DataSeed.exe.config
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\bin\Debug\HospitalManagementSystem.Console.DataSeed.exe
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\bin\Debug\HospitalManagementSystem.Console.DataSeed.pdb
@@ -47,6 +45,8 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\bin\Debug\HospitalManagementSystem.Models.pdb
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\bin\Debug\HospitalManagementSystem.Repository.pdb
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\bin\Debug\HospitalManagementSystem.Interfaces.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.csprojAssemblyReference.cache
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.csproj.CoreCompileInputs.cache
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.csproj.CopyComplete
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.exe
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.pdb

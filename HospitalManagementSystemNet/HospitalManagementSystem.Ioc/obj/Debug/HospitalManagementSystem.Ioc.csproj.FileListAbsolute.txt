@@ -27,3 +27,4 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\obj\Debug\HospitalManagementSystem.Ioc.csproj.CopyComplete
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\obj\Debug\HospitalManagementSystem.Ioc.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\obj\Debug\HospitalManagementSystem.Ioc.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Ioc\obj\Debug\HospitalManagementSystem.Ioc.csprojAssemblyReference.cache

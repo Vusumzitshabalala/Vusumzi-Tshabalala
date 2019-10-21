@@ -53,7 +53,7 @@ namespace HospitalManagementSystem.Console.DataSeed
             });
 
             hospitalManagementSystemContext.DoctorType.AddRange(new List<DoctorType>() {
-                new DoctorType
+                new DoctorType()
                 {
                     Id = 1,
                     Name = "Anesthesiologist"
@@ -87,7 +87,92 @@ namespace HospitalManagementSystem.Console.DataSeed
                 
                
             });
-            
+            hospitalManagementSystemContext.Race.AddRange(new List<Race>() {
+                new Race()
+                {
+                    Id = 1,
+                    Name = "Black"
+                },
+                new Race()
+                {
+                    Id = 2,
+                    Name = "White"
+                },
+                new Race()
+                {
+                    Id = 3,
+                    Name = "Indian"
+                },
+                new Race()
+                {
+                    Id = 4,
+                    Name = "Asian"
+                },
+                new Race()
+                {
+                    Id = 5,
+                    Name = "hawaiian"
+                },
+                new Race()
+
+                {
+                    Id = 6,
+                    Name = "Alaska Native"
+                }
+
+
+            });
+            hospitalManagementSystemContext.Province.AddRange(new List<Province>() {
+                new Province()
+                {
+                    Id = 1,
+                    Name = "Western Cape"
+                },
+                new Province()
+                {
+                    Id = 2,
+                    Name = "Eastern Cape"
+                },
+                new Province()
+                {
+                    Id = 3,
+                    Name = "Northern Cape"
+                },
+                new Province()
+                {
+                    Id = 4,
+                    Name = "North West"
+                },
+                new Province()
+                {
+                    Id = 5,
+                    Name = "Free State"
+                },
+                new Province()
+
+                {
+                    Id = 6,
+                    Name = "Kwazulu Natal"
+                },
+                new Province()
+                {
+                    Id = 7,
+                    Name = "Gauten"
+                },
+                new Province()
+                {
+                    Id = 8,
+                    Name = "Limpopo"
+                },
+                new Province()
+                {
+                    Id = 9,
+                    Name = "Mpumalanga"
+                }
+
+
+            });
+
 
             hospitalManagementSystemContext.SaveChanges();
 

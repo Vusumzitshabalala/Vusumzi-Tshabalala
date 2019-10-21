@@ -1,9 +1,4 @@
 ﻿using HospitalManagementSystem.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HospitalManagementSystem.Interfaces
 {
@@ -11,5 +6,6 @@ namespace HospitalManagementSystem.Interfaces
     {
         void Retrieve(string IdentityNumber);
 
-        Doctor Administrator { get; }
-    }    }
+        Administrator Administrator { get; }
+    }
+}

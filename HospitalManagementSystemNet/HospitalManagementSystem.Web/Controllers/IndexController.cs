@@ -1,9 +1,5 @@
 ﻿using HospitalManagementSystem.Interfaces;
 using HospitalManagementSystem.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace HospitalManagementSystem.Web.Controllers
@@ -11,19 +7,28 @@ namespace HospitalManagementSystem.Web.Controllers
     public class IndexController : Controller
     {
         public IPatientRegistration PatientRegistration { get; }
+        public IPatientsRetriever PatientsRetriever { get; }
 
-        public IndexController(IPatientRegistration patientRegistration)
+        public IndexController(IPatientRegistration patientRegistration, IPatientsRetriever patientsRetriever)
         {
             PatientRegistration = patientRegistration;
+            PatientsRetriever = patientsRetriever;
         }
 
+        [HttpGet]
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult CreatePatient()
         {
             return View(new Patient());
         }
 
         [HttpPost]
-        public ActionResult Index(Patient patient)
+        public ActionResult CreatePatient(Patient patient)
         {
             try
             {
@@ -34,6 +39,12 @@ namespace HospitalManagementSystem.Web.Controllers
             {
                 return View();
             }
+        }
+
+        [HttpGet]
+        public ActionResult ViewPatients()
+        {
+            return View(PatientsRetriever.GetAllPatients());
         }
 
     }

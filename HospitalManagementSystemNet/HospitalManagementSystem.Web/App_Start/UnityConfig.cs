@@ -50,9 +50,28 @@ namespace HospitalManagementSystem.Web
             container.RegisterType<IPatientRepository, PatientRepository>();
             container.RegisterType<IPatientRegistration, PatientRegistration>();
             container.RegisterType<IPatientRetriever, PatientRetriever>();
+            container.RegisterType<IPatientsRetriever, PatientsRetriever>();
+
             container.RegisterType<IDoctorRepository, DoctorRepository>();
             container.RegisterType<IDoctorRegistration, DoctorRegistration>();
             container.RegisterType<IDoctorRetriever, DoctorRetriever>();
+            container.RegisterType<IDoctorsRetriever, DoctorsRetriever>();
+
+            container.RegisterType<INurseRepository, NurseRepository>();
+            container.RegisterType<INurseRegistration, NurseRegistration>();
+            container.RegisterType<INurseRetriever, NurseRetriever>();
+            container.RegisterType<INursesRetriever, NursesRetriever>();
+
+            container.RegisterType<IAdministratorRepository, AdministratorRepository>();
+            container.RegisterType<IAdministratorRegistration, AdministratorRegistration>();
+            container.RegisterType<IAdministratorRetriever, AdministratorRetriever>();
+            container.RegisterType<IAdministratorsRetriever, AdministratorsRetriever>();
+
+            container.RegisterType<IPorterRepository, PoterRepository>();
+            container.RegisterType<IPorterRegistration, PorterRegistration>();
+            container.RegisterType<IPorterRetriever, PorterRetriever>();
+            container.RegisterType<IPortersRetriever, PortersRetriever>();
+
             container.RegisterInstance(hospitalManagementSystemContext);
             //TypeFactory.RegisterType<IPatientRepository,PatientRepository>();
             //TypeFactory.RegisterType<IPatientRegistration, PatientRegistration>();
