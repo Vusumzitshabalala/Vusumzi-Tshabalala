@@ -10,17 +10,45 @@
         <div class="row">
             <ul>
                 <li>
-                    @Html.ActionLink("Create Patient", "Index", "Index")
+                    @Html.ActionLink("Create Patient", "CreatePatient", "Index")
+                </li>
+
+                <li>
+                    @Html.ActionLink("Create Doctor", "CreateDoctor", "Doctor")
                 </li>
                 <li>
-                    @Html.ActionLink("Create Doctor", "DoctorInfo", "Doctor")
+                    @Html.ActionLink("Create Nurse", "CreateNurse", "Nurse")
+                </li>
+
+                <li>
+                    @Html.ActionLink("Create Administrator", "CreateAdministrator", "Administrator")
+                </li>
+
+                <li>
+                    @Html.ActionLink("Create Porter", "CreatePorter", "Porter")
+                </li>
+
+                <li>
+                    @Html.ActionLink("View Patients", "ViewPatients", "Index")
                 </li>
                 <li>
-                    @Html.ActionLink("View Patients", "Index", "Index")
+                    @Html.ActionLink("View Doctors", "ViewDoctors", "Doctor")
                 </li>
+
                 <li>
-                    @Html.ActionLink("View Doctors", "Index", "Doctor")
+                    @Html.ActionLink("View Nurses", "ViewNurses", "Nurse")
                 </li>
+
+                <li>
+                    @Html.ActionLink("View Administrators", "ViewAdministrators", "Administrator")
+                </li>
+
+                <li>
+                    @Html.ActionLink("View Porters", "ViewPorters", "Porter")
+                </li>
+
+
+
             </ul>
         </div>
         <div class="row">

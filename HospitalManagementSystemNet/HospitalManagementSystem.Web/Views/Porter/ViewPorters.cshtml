@@ -1,0 +1,26 @@
+﻿@model List<HospitalManagementSystem.Models.Porter>
+@{
+    ViewBag.Title = "ViewPorters";
+    Layout = "..\\Shared\\_Layout.cshtml";
+}
+
+<h2>View Porters</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">Name</div>
+        <div class="col-xs-12">Surname</div>
+        <div class="col-xs-12"><a href=""></a></div>
+    </div>
+
+    @foreach (var porter in Model)
+    {
+        <div class="row">
+            <div class="col-xs-12">@porter.Person?.Name</div>
+            <div class="col-xs-12">>@porter.Person?.Surname</div>
+
+
+            <div class="col-xs-12"><a href=""> Delete </a> </div>
+        </div>
+    }
+
+</div>

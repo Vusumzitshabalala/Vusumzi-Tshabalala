@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrator.cs" />
     <Compile Include="Doctor.cs" />
     <Compile Include="DoctorType.cs" />
     <Compile Include="Gender.cs" />
@@ -51,6 +52,7 @@
     <Compile Include="Nurse.cs" />
     <Compile Include="Patient.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="Porter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Province.cs" />
     <Compile Include="Race.cs" />

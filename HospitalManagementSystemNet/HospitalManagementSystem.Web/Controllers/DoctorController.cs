@@ -1,37 +1,52 @@
 ﻿using HospitalManagementSystem.Interfaces;
 using HospitalManagementSystem.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace HospitalManagementSystem.Web.Controllers
 {
-    public class DoctorController: Controller
+    public class DoctorController : Controller
     {
         public IDoctorRegistration DoctorRegistration { get; }
+        public IDoctorsRetriever DoctorsRetriever { get; }
 
-        public DoctorController(IDoctorRegistration doctorRegistration)
+        public DoctorController(IDoctorRegistration doctorRegistration, IDoctorsRetriever doctorsRetriever)
         {
             DoctorRegistration = doctorRegistration;
+            DoctorsRetriever = doctorsRetriever;
         }
-        public ActionResult DoctorInfo()
+
+        [HttpGet]
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult CreateDoctor()
         {
             return View(new Doctor());
         }
+
         [HttpPost]
-        public ActionResult DoctorInfo(Doctor doctor)
+        public ActionResult CreateDoctor(Doctor doctor)
         {
             try
             {
                 DoctorRegistration.Register(doctor);
-                return RedirectToAction("DoctorInfo");
+                return RedirectToAction("Index");
             }
             catch
             {
                 return View();
             }
         }
+
+        [HttpGet]
+        public ActionResult ViewDoctors()
+        {
+            return View(DoctorsRetriever.GetAllDoctors());
+        }
+
+
     }
 }

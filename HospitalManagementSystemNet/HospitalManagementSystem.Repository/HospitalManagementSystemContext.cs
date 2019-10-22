@@ -24,9 +24,12 @@ namespace HospitalManagementSystem.Repository
             //modelBuilder.Entity<Person>().HasKey(p => p.RaceId);
             //modelBuilder.Entity<Person>().HasKey(p => p.NationalityId);
             //modelBuilder.Entity<Person>().HasKey(p => p.DoctorTypeId);
+            //modelBuilder.Entity<Person>().HasKey(p => p.ProvinceId);
             modelBuilder.Entity<Doctor>().HasKey(p => p.PersonId);
             modelBuilder.Entity<Nurse>().HasKey(p => p.PersonId);
             modelBuilder.Entity<Patient>().HasKey(p => p.PersonId);
+            modelBuilder.Entity<Administrator>().HasKey(p => p.PersonId);
+            modelBuilder.Entity<Porter>().HasKey(p => p.PersonId);
             //modelBuilder.Entity<Hospital>().HasKey(p => p.ProvinceId);
         }
 
@@ -49,6 +52,9 @@ namespace HospitalManagementSystem.Repository
         public DbSet<Hospital> Hospital { get; set; }
 
         public DbSet<DoctorType> DoctorType { get; set; }
-       
+
+        public DbSet<Porter> Porter { get;  set; }
+
+        public DbSet<Administrator> Administrator { get;  set; }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using HospitalManagementSystem.Interfaces;
 using HospitalManagementSystem.Models;
-using System;
 
 namespace HospitalManagementSystem.Logic
 {

@@ -41,10 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministratorRegistration.cs" />
+    <Compile Include="AdministratorRetriever.cs" />
+    <Compile Include="AdministratorsRetriever.cs" />
     <Compile Include="DoctorRegistration.cs" />
     <Compile Include="DoctorRetriever.cs" />
+    <Compile Include="DoctorsRetriever.cs" />
+    <Compile Include="NurseRegistration.cs" />
+    <Compile Include="NurseRetriever.cs" />
+    <Compile Include="NursesRetriever.cs" />
     <Compile Include="PatientRegistration.cs" />
     <Compile Include="PatientRetriever.cs" />
+    <Compile Include="PatientsRetriever.cs" />
+    <Compile Include="PorterRegistration.cs" />
+    <Compile Include="PorterRetriever.cs" />
+    <Compile Include="PortersRetriever.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
