@@ -18,7 +18,7 @@ namespace HospitalManagementSystem.Web.Controllers
         [HttpPost]
         public ActionResult Login(LoginCredentials login)
         {
-            return View();
+            return RedirectToAction("LoggedIn", "Account");
         }
 
         // GET: Account
