@@ -5811,7 +5811,7 @@ h6 {
 
 /* line 10, /Applications/MAMP/htdocs/palash/cl/july 2019/189 travel/189 travel html/sass/_breadcrumb.scss */
 .breadcrumb .breadcrumb_iner {
-  height: 500px;
+  height: 200px;
   width: 100%;
   display: table;
 }
