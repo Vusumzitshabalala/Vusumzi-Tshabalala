@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Multiplex.Models">
+      <HintPath>..\..\Libraries\Multiplex.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Multiplex.Models.Security">
+      <HintPath>..\..\Libraries\Multiplex.Models.Security.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

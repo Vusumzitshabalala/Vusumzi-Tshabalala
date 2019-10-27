@@ -214,3 +214,11 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\obj\Debug\HospitalManagementSystem.Web.csproj.CopyComplete
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\obj\Debug\HospitalManagementSystem.Web.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\obj\Debug\HospitalManagementSystem.Web.pdb
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\Multiplex.DomainServices.Communication.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\Multiplex.DomainServices.FileProcessing.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\Multiplex.DomainServices.Security.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\Multiplex.Models.Communication.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\Multiplex.Models.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\Multiplex.Models.Security.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\Multiplex.Repositories.Generic.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\Multiplex.Utilities.dll

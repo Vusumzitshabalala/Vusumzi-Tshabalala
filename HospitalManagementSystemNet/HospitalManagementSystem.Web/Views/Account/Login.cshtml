@@ -1,31 +1,96 @@
-﻿@model HospitalManagementSystem.Models.Web.LoginCredentials
+﻿@model HospitalManagementSystem.Models.Person
 @{
     ViewBag.Title = "Login";
     Layout = "..\\Shared\\_Layout.cshtml";
 }
-@using (Html.BeginForm())
-{
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-4">
+<div class="middle-box text-center loginscreen animated fadeInDown">
+    <div>
+        <h3>Welcome to Hospital Management System</h3>
 
-                @*@Html.TextBoxFor(m => m.Username, new Dictionary<string, object>())*@
-                <input type="text" id="username" name="username" placeholder="Username"
-                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" required
-                       class="single-input">
+        @using (Html.BeginForm())
+        {
+            <div class="reg-header">
+                <h3>Login to your Account</h3>
             </div>
-            <div class="col-lg-4">
-                @*@Html.EditorFor(m => m.Password, new Dictionary<string, object>())*@
-                <input type="password" name="password" placeholder="Password"
-                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required
-                       class="single-input">
+
+            <p>If you have an account please log in. If you don't have an account <a href="/Account/Register">click here</a> to Register.</p>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                @Html.TextBoxFor(ui => ui.UserName, new { @class = "form-control", @placeholder = "Username" })
+                <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.UserName)</span>
             </div>
-            <div class="col-lg-4">
-                <button type="submit" onclick="/Account/LoggedIn" id="login" name="login" class="genric-btn primary circle arrow">Login</button>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                @Html.PasswordFor(ui => ui.Password, new { @class = "form-control", @placeholder = "Password" })
+                <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Password)</span>
+            </div>
+            <br />
+
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-primary block full-width m-b">Login</button>
+                </div>
+            </div>
+
+            <div class="">
+                @if (Model != null && !string.IsNullOrWhiteSpace(Model.Error))
+                {
+                    <div class="alert alert-warning" role="alert">
+                        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only"> Close</span></button>
+                        <label><strong>Outcome:  </strong> </label> <label id="resetMessage">@Model.Error </label>
+                    </div>
+                }
+                else
+                {
+                    <div id="resetMessageContainer" class="alert alert-warning" role="alert" style="display: none;">
+                        <label><strong>Outcome:  </strong> </label> <label id="resetMessage"> </label>
+                    </div>
+                }
+            </div>
+            <hr>
+            <h4>Forgot your Password ?</h4>
+            <p>No worries, <a class="color-yellow" data-toggle="modal" data-target="#myModal" href="">click here</a> to reset your password.</p>
+
+        }
+        <p class="m-t"> <small>Hospital Management System &copy; 2019</small> </p>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header btn-primary">
+                <button type="button" class="close" data-dismiss="modal" style="color:red">&times;</button>
+                <h4 class="modal-title">Forgot Your Password?</h4>
+            </div>
+            <div class="modal-body">
+                @Html.Partial("ResetPassword")
             </div>
         </div>
+
     </div>
-}
+</div>
 
+<script>
 
+    function resetPassword() {
+        var cellphone = $("#Cellphone").val();
+        $.ajax({
+            method: "POST",
+            url: "/Account/ResetPasswordModal",
+            data: { cellphone: cellphone }
+        })
+            .done(function (msg) {
+                $('#myModal').modal('hide');
+                $("#resetMessage").html(msg);
+                $("#resetMessageContainer").show();
+            });
+    }
+
+</script>
 

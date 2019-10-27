@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Multiplex.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HospitalManagementSystem.Models
 {

@@ -25,9 +25,9 @@ namespace HospitalManagementSystem.Tests
             patient.Prescription = "Prescription";
             patient.PersonId = 1;
             patient.Person.Id = 1;
-            patient.Person.Name = "Vusi";
+            patient.Person.FirstName = "Vusi";
             patient.Person.Surname = "Khoza";
-            patient.Person.IdentityNumber = "1234";
+            patient.Person.IdNumber = "1234";
 
             IPatientRepository patientRepository = new PatientRepository();
             IPatientRegistration patientRegistration = new PatientRegistration(patientRepository);
@@ -35,11 +35,11 @@ namespace HospitalManagementSystem.Tests
             patientRegistration.Register(patient);
 
             IPatientRetriever patientRetriever = new PatientRetriever(patientRepository);
-            patientRetriever.Retrieve(patient.Person.IdentityNumber);
+            patientRetriever.Retrieve(patient.Person.IdNumber);
 
             Assert.IsNotNull(patientRetriever.Patient);
             Assert.AreEqual(patient.Person.Id, patientRetriever.Patient.Person.Id);
-            Assert.AreEqual(patient.Person.Name, patientRetriever.Patient.Person.Name);
+            Assert.AreEqual(patient.Person.FirstName, patientRetriever.Patient.Person.FirstName);
             Assert.AreEqual(patient.Person.Surname, patientRetriever.Patient.Person.Surname);
         }
     }

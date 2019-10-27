@@ -1,0 +1,39 @@
+﻿@model string
+
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Registration Successfully</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("Index", "Home")">Home</a>
+            </li>
+            <li class="active">
+                <strong>Registered</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="ibox-content">
+            <div class="alert alert-success" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <strong>Success!</strong> @Model
+            </div>
+            <div class="std-top-padding">
+                @if (!Request.IsAuthenticated)
+                {
+                    <br />
+                    <input type="button" value="Login" class="btn btn-primary" onclick=" window.location = 'Login'" />
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+

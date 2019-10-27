@@ -1,0 +1,28 @@
+====================================START=======================================
+Date: 10/27/2019 2:29:07 PM
+Severity: Info
+Message: User: 0837811648, created. User Information - |DateOfBirth: 5/10/1970 12:00:00 AM|NationalityId: 0|RaceId: 0|GenderId: 1|CellNumber: 0|UserId: 00000000-0000-0000-0000-000000000000|FirstName: Thabiso|Surname: Molise|Cellphone: 0837811648|UserName: 0837811648|Email: thabiso.molise@investec.co.za|PasswordChanged: False|IsLockedOut: False|Id: 0|CreatedById: 00000000-0000-0000-0000-000000000000|DateCreated: 10/27/2019 2:29:07 PM|Active: True|Error: 
+=====================================END========================================
+
+
+====================================START=======================================
+Date: 10/27/2019 2:29:32 PM
+Severity: Info
+Message: User: 0837811648, created. User Information - |DateOfBirth: 5/10/1970 12:00:00 AM|NationalityId: 0|RaceId: 0|GenderId: 1|CellNumber: 0|UserId: 00000000-0000-0000-0000-000000000000|FirstName: Thabiso|Surname: Molise|Cellphone: 0837811648|UserName: 0837811648|Email: thabiso.molise@investec.co.za|PasswordChanged: False|IsLockedOut: False|Id: 0|CreatedById: 00000000-0000-0000-0000-000000000000|DateCreated: 10/27/2019 2:29:32 PM|Active: True|Error: 
+=====================================END========================================
+
+
+====================================START=======================================
+Date: 10/27/2019 2:29:43 PM
+Severity: Info
+Message: User: 0837811648, created. User Information - |DateOfBirth: 5/10/1970 12:00:00 AM|NationalityId: 0|RaceId: 0|GenderId: 1|CellNumber: 0|UserId: 00000000-0000-0000-0000-000000000000|FirstName: Thabiso|Surname: Molise|Cellphone: 0837811648|UserName: 0837811648|Email: thabiso.molise@investec.co.za|PasswordChanged: False|IsLockedOut: False|Id: 0|CreatedById: 00000000-0000-0000-0000-000000000000|DateCreated: 10/27/2019 2:29:43 PM|Active: True|Error: 
+=====================================END========================================
+
+
+====================================START=======================================
+Date: 10/27/2019 2:37:07 PM
+Severity: Info
+Message: User: 0837811648, created. User Information - |DateOfBirth: 5/10/1970 12:00:00 AM|NationalityId: 0|RaceId: 0|GenderId: 1|CellNumber: 0|UserId: 00000000-0000-0000-0000-000000000000|FirstName: Thabiso|Surname: Molise|Cellphone: 0837811648|UserName: 0837811648|Email: thabiso.molise@investec.co.za|PasswordChanged: False|IsLockedOut: False|Id: 0|CreatedById: 00000000-0000-0000-0000-000000000000|DateCreated: 10/27/2019 2:36:44 PM|Active: True|Error: 
+=====================================END========================================
+
+

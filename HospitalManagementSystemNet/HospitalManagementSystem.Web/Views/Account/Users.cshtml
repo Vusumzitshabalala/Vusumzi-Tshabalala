@@ -1,0 +1,102 @@
+﻿@model Tuple<List<HospitalManagementSystem.Models.Person>, bool>
+@using Multiplex.Models.Tea;
+
+
+    <link href="~/Content/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/plugins/dataTables/dataTables.responsive.css" rel="stylesheet" />
+    <link href="~/Content/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="~/Scripts/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="~/Scripts/plugins/dataTables/dataTables.responsive.js"></script>
+    <script src="~/Scripts/plugins/dataTables/dataTables.tableTools.min.js"></script>
+      
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Users</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("Index", "Home")">Home</a>
+            </li>
+            <li class="active">
+                <strong>Users</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox-content row">
+        <div class="">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                @if (Model != null && Model.Item1 != null && Model.Item1.Count > 0)
+                {
+                    <h2>Users list</h2>
+                    <br />
+                    <table id="grid" class="table grid display">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Fullname</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var userInformation in Model.Item1)
+                            {
+                                <tr>
+                                    <td>@userInformation.UserName</td>
+                                    <td class="hidden-sm">@userInformation.Email</td>
+                                    <td class="hidden-sm">@(userInformation.FirstName + " " + userInformation.Surname)</td>
+                                    <td>
+                                        @Html.ActionLink("Edit", "ProfileByUsername", new { username = userInformation.UserName }, new { @class = "btn btn-white btn-sm" })
+                                        @if (User != null && User.IsInRole(Constants.ROLE_ADMIN))
+                                        {
+                                            @Html.ActionLink("Roles", "UserRoles", new { username = userInformation.UserName }, new { @class = "btn btn-white btn-sm" })
+                                        }
+                                        @if (User != null && User.Identity.Name != userInformation.UserName)
+                                        {
+                                            if (userInformation.IsLockedOut)
+                                            {
+                                                @Html.ActionLink("Unlock", "LockUnlockUser", new { username = userInformation.UserName, isLocked = false }, new { @class = "btn btn-white btn-sm" })
+                                            }
+                                            else
+                                            {
+                                                @Html.ActionLink(" Lock", "LockUnlockUser", new { username = userInformation.UserName, isLocked = true }, new { @class = "btn btn-white btn-sm label-warning" })
+
+                                            }
+                                        }
+                                        @if (User != null && User.IsInRole(Constants.ROLE_ADMIN))
+                                        {
+                                            @Html.ActionLink("Businesses", "ClientBusinesses", "BusinessProfile", new { userInformationId = userInformation.Id }, new { @class = "btn btn-white btn-sm" })
+                                        }
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $(document).ready(function () {
+            $('.grid').dataTable({
+               responsive: true
+            });
+        });
+    }(jQuery));
+</script>
+
+

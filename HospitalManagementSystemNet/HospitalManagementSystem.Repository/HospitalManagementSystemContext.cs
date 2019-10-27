@@ -8,6 +8,11 @@ namespace HospitalManagementSystem.Repository
 {
     public class HospitalManagementSystemContext: DbContext
     {
+        public HospitalManagementSystemContext()
+        {
+
+        }
+
         public HospitalManagementSystemContext(bool initialise = false)
         {
             if (initialise == true)
@@ -56,5 +61,15 @@ namespace HospitalManagementSystem.Repository
         public DbSet<Porter> Porter { get;  set; }
 
         public DbSet<Administrator> Administrator { get;  set; }
+
+        public DbSet<WardType> WardType { get; set; }
+
+        public DbSet<Ward> Ward { get; set; }
+
+        public DbSet<Bed> Bed { get; set; }
+
+        public DbSet<BedAllocation> BedAllocation { get; set; }
+
+        public DbSet<DoctorAppointment> DoctorAppointment { get; set; }
     }
 }
