@@ -60,6 +60,7 @@
     <Compile Include="Nationality.cs" />
     <Compile Include="Nurse.cs" />
     <Compile Include="Patient.cs" />
+    <Compile Include="PatientVisit.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Porter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -47,12 +47,15 @@
     <Compile Include="DoctorRegistration.cs" />
     <Compile Include="DoctorRetriever.cs" />
     <Compile Include="DoctorsRetriever.cs" />
+    <Compile Include="IPatientVisitRetriever.cs" />
     <Compile Include="NurseRegistration.cs" />
     <Compile Include="NurseRetriever.cs" />
     <Compile Include="NursesRetriever.cs" />
     <Compile Include="PatientRegistration.cs" />
     <Compile Include="PatientRetriever.cs" />
     <Compile Include="PatientsRetriever.cs" />
+    <Compile Include="PatientVisitRegistration.cs" />
+    <Compile Include="PatienVisitRetriever.cs" />
     <Compile Include="PorterRegistration.cs" />
     <Compile Include="PorterRetriever.cs" />
     <Compile Include="PortersRetriever.cs" />

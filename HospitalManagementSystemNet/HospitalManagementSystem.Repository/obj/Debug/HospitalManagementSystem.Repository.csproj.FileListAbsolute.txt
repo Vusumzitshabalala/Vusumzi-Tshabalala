@@ -46,3 +46,5 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\obj\Debug\HospitalManagementSystem.Repository.pdb
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\bin\Debug\Multiplex.Models.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\bin\Debug\Multiplex.Models.Security.dll
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\bin\Debug\Multiplex.Models.dll
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Repository\bin\Debug\Multiplex.Models.Security.dll
