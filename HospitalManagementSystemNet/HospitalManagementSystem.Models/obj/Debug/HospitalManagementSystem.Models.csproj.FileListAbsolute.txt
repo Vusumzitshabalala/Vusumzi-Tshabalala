@@ -12,4 +12,3 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Models\bin\Debug\Multiplex.Models.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Models\bin\Debug\Multiplex.Models.Security.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.csproj.CopyComplete
-C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Models\obj\Debug\HospitalManagementSystem.Models.csprojAssemblyReference.cache

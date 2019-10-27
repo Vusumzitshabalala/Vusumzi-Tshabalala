@@ -6,7 +6,7 @@
 }
 
 
-<link href="~/Content/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+<link href="~/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
 <script src="~/Scripts/plugins/datapicker/bootstrap-datepicker.js"></script>
 
 <style>
@@ -32,7 +32,7 @@
                 {
                     <div class="reg-header"> <h2>Create a new Account</h2> </div>
 
-                    <p>By creating an account with us, you will be able to add your business, get recomandations on your business and more. If you already have an Account <a href="/Account/Login">click here</a> to Login.</p>
+                    <p>By creating an account with us, you will be able to log on the system, however your access will be limited until Admin grants you access. If you already have an Account <a href="/Account/Login">click here</a> to Login.</p>
                     <br />
 
                     <div class="">
@@ -46,33 +46,33 @@
                     </div>
 
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <span class="input-group-addon"><i class="fa fa-user padding-icon"></i></span>
                         @Html.TextBoxFor(ui => ui.FirstName, new { @class = "form-control", @placeholder = "First Name(s)" })
                         <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.FirstName)</span>
                     </div>
 
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <span class="input-group-addon"><i class="fa fa-user padding-icon"></i></span>
                         @Html.TextBoxFor(ui => ui.Surname, new { @class = "form-control", @placeholder = "Surname" })
                         <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Surname)</span>
                     </div>
 
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                        <span class="input-group-addon"><i class="fa fa-female"></i><i class="fa fa-male padding-icon"></i></span>
+                        @Html.DropDownListFor(ui => ui.GenderId, lookupHelper.SelectedListItems, new { @class = "form-control", @placeholder = "Surname" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.GenderId)</span>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-phone padding-icon"></i></span>
                         @Html.TextBoxFor(ui => ui.Cellphone, new { @class = "form-control", @placeholder = "Cellphone/Username" })
                         <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Cellphone)</span>
                     </div>
 
 
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                        <span class="input-group-addon"><i class="fa fa-envelope padding-icon"></i></span>
                         @Html.TextBoxFor(ui => ui.Email, new { @class = "form-control", @placeholder = "Email" })
                         <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Email)</span>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-female"></i><i class="fa fa-male"></i></span>
-                        @Html.DropDownListFor(ui => ui.GenderId, lookupHelper.SelectedListItems, new { @class = "form-control", @placeholder = "Surname" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.GenderId)</span>
                     </div>
                     <br />
                     <div class="">
@@ -82,6 +82,51 @@
                         <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.DateOfBirth)</span>
                     </div>
                     <br />
+                    <div class="form-group">
+
+                        @Html.LabelFor(model => model.NationalityId, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        <div class="col-md-10">
+
+                            @Html.DropDownListFor(model => model.NationalityId, new List<SelectListItem>() { new SelectListItem() { Text = "South Africa", Value = "1" }, new SelectListItem() { Text = "Lesotho", Value = "1" } }, new { htmlAttributes = new { @class = "form-control" } })
+
+                            @Html.ValidationMessageFor(model => model.NationalityId, "", new { @class = "text-danger" })
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        @Html.LabelFor(model => model.GenderId, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        <div class="col-md-10">
+
+                            @Html.DropDownListFor(model => model.GenderId, new List<SelectListItem>() { new SelectListItem() { Text = "Male", Value = "1" }, new SelectListItem() { Text = "Female", Value = "2" } }, new { htmlAttributes = new { @class = "form-control" } })
+
+                            @Html.ValidationMessageFor(model => model.GenderId, "", new { @class = "text-danger" })
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        @Html.LabelFor(model => model.RaceId, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        <div class="col-md-10">
+
+                            @Html.DropDownListFor(model => model.RaceId, new List<SelectListItem>() { new SelectListItem() { Text = "Black", Value = "1" }, new SelectListItem() { Text = "Indian", Value = "2" }, new SelectListItem() { Text = "Coloured", Value = "3" }, new SelectListItem() { Text = "White", Value = "4" } }, new { htmlAttributes = new { @class = "form-control" } })
+
+                            @Html.ValidationMessageFor(model => model.RaceId, "", new { @class = "text-danger" })
+
+                        </div>
+
+                    </div>
 
                     <div class="input-group">
                         <input type="checkbox" id="TandC">
