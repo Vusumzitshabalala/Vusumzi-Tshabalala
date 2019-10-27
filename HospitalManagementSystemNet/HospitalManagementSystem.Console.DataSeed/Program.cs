@@ -2,9 +2,6 @@
 using HospitalManagementSystem.Repository;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HospitalManagementSystem.Console.DataSeed
 {
@@ -26,6 +23,124 @@ namespace HospitalManagementSystem.Console.DataSeed
                 {
                     Id = 2,
                     Name = "Female"
+                }
+            });
+
+            hospitalManagementSystemContext.WardType.AddRange(new List<WardType>() {
+                new WardType()
+                {
+                    Id = 1,
+                    Name = "Maternity"                    
+                },
+                new WardType()
+                {
+                    Id = 2,
+                    Name = "Pediatrics"
+                },
+                new WardType()
+                {
+                    Id = 3,
+                    Name = "Psychiatric"
+                },
+                new WardType()
+                {
+                    Id = 4,
+                    Name = "Intensive Care Unit"
+                }
+            });
+
+            hospitalManagementSystemContext.Ward.AddRange(new List<Ward>() {
+                new Ward()
+                {
+                    Id = 1,
+                    Number = "WD001",
+                    WardTypeId = 1,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                },
+                new Ward()
+                {
+                    Id = 2,
+                    Number = "WD002",
+                    WardTypeId = 4,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                },
+                new Ward()
+                {
+                    Id = 3,
+                    Number = "WD003",
+                    WardTypeId = 3,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                },
+                new Ward()
+                {
+                    Id = 4,
+                    Number = "WD004",
+                    WardTypeId = 2,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                }
+            });
+
+            hospitalManagementSystemContext.Bed.AddRange(new List<Bed>()
+            {
+                new Bed()
+                {
+                    Number = "BD001",
+                    WardId = 1,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                },
+                new Bed()
+                {
+                    Number = "BD002",
+                    WardId = 1,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                },
+                new Bed()
+                {
+                    Number = "BD003",
+                    WardId = 2,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                },
+                new Bed()
+                {
+                    Number = "BD004",
+                    WardId = 2,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                },
+                new Bed()
+                {
+                    Number = "BD005",
+                    WardId = 3,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                },
+                new Bed()
+                {
+                    Number = "BD006",
+                    WardId = 3,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                },
+                new Bed()
+                {
+                    Number = "BD007",
+                    WardId = 4,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
+                },
+                new Bed()
+                {
+                    Number = "BD008",
+                    WardId = 4,
+                    CreatedById = Guid.NewGuid(),
+                    DateCreated = DateTime.Now
                 }
             });
 
@@ -61,17 +176,17 @@ namespace HospitalManagementSystem.Console.DataSeed
                 new DoctorType()
                 {
                     Id = 2,
-                    Name = "immunologist"
+                    Name = "Immunologist"
                 },
                 new DoctorType()
                 {
                     Id = 3,
-                    Name = "medicine specialist"
+                    Name = "Medicine Specialist"
                 },
                 new DoctorType()
                 {
                     Id = 4,
-                    Name = "psychiatrist"
+                    Name = "Psychiatrist"
                 },
                 new DoctorType()
                 {
@@ -82,7 +197,7 @@ namespace HospitalManagementSystem.Console.DataSeed
 
                 {
                     Id = 6,
-                    Name = "Cardiovascular surgeon"
+                    Name = "Cardiovascular Surgeon"
                 }
                 
                

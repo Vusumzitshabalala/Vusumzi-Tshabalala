@@ -1,0 +1,61 @@
+﻿@model Tuple<List<Multiplex.Models.Security.RoleEdit>, string, string>
+@{
+    var role = string.Empty;
+
+    if (Model != null && Model.Item2 != null)
+    {
+        role = Model.Item2;
+    }
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<div class="panel panel-default">
+    <div class="page-title">|Manage Roles</div>
+    <div class="std-top-padding">
+        @using (@Html.BeginForm())
+        {   @Html.Label("createRole", "Create Role: ")
+            @Html.TextBox("roleName", role)
+            <input type="submit" name="saveUserRole" value="Save" class="button" />
+            <div class="success">@Model.Item3</div>
+            <br />
+            <br />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Role Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                @if (Model != null && Model.Item1 != null && Model.Item1.Count > 0)
+                {
+                    <tbody>
+                        @foreach (var roleEdit in Model.Item1)
+                        {                
+                            <tr>
+                                <td>@roleEdit.Name</td>
+                                <td>
+                                    @if (roleEdit.CanDelete)
+                                    {
+                                        @Html.ActionLink("Delete", "DeleteRole", new { rolename = roleEdit.Name }) 
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                }
+                else
+                {        
+                    <tbody>
+                        <tr>
+                            <td>No roles found</td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+        }
+    </div>
+</div>

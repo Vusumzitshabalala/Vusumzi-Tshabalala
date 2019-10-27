@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Multiplex.Models.Security;
+using System;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HospitalManagementSystem.Models
 {
-    public class Person
+    public class Person: UserInfo
 
     {
         public Person()
@@ -13,20 +13,8 @@ namespace HospitalManagementSystem.Models
             DateOfBirth = new DateTime(1970, 05, 10);
         }
 
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-
-        [StringLength(100)]
-        public String Name{ get; set; }
-
-        public string Surname { get; set; }
-
         [DisplayName("Date Of Birth")]
         public DateTime DateOfBirth { get; set; }
-
-        [DisplayName("ID Number")]
-        public string IdentityNumber { get; set; }
 
         [DisplayName("Nationality")]
         public int NationalityId { get; set; }

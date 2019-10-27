@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Multiplex.Models">
+      <HintPath>..\..\Libraries\Multiplex.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Multiplex.Models.Security">
+      <HintPath>..\..\Libraries\Multiplex.Models.Security.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -43,7 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrator.cs" />
+    <Compile Include="Bed.cs" />
+    <Compile Include="BedAllocation.cs" />
     <Compile Include="Doctor.cs" />
+    <Compile Include="DoctorAppointment.cs" />
     <Compile Include="DoctorType.cs" />
     <Compile Include="Gender.cs" />
     <Compile Include="Hospital.cs" />
@@ -56,6 +65,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Province.cs" />
     <Compile Include="Race.cs" />
+    <Compile Include="Constants\Roles.cs" />
+    <Compile Include="Ward.cs" />
+    <Compile Include="WardType.cs" />
+    <Compile Include="Web\Communication.cs" />
+    <Compile Include="Web\CommunicationType.cs" />
+    <Compile Include="Web\Login.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

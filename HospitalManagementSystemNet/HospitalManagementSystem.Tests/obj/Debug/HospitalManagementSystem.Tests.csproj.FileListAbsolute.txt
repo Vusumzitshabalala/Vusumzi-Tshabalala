@@ -74,3 +74,5 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\obj\Debug\HospitalManagementSystem.Tests.csproj.CopyComplete
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\obj\Debug\HospitalManagementSystem.Tests.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\obj\Debug\HospitalManagementSystem.Tests.pdb
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\Multiplex.Models.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Tests\bin\Debug\Multiplex.Models.Security.dll

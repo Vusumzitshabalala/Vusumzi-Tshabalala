@@ -35,7 +35,7 @@ namespace HospitalManagementSystem.Repository
             using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
             //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
             {
-                result = context.Nurse.FirstOrDefault(p => p.Person.IdentityNumber == identityNumber);
+                result = context.Nurse.FirstOrDefault(p => p.Person.IdNumber == identityNumber);
             }
             return result;
         }

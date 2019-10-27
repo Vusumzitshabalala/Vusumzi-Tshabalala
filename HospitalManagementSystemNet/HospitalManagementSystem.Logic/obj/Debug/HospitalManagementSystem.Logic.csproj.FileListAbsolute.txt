@@ -20,3 +20,5 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.csproj.CopyComplete
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\obj\Debug\HospitalManagementSystem.Logic.pdb
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\bin\Debug\Multiplex.Models.Security.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Logic\bin\Debug\Multiplex.Models.dll

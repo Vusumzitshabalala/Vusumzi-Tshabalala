@@ -50,3 +50,5 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.csproj.CopyComplete
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.exe
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\obj\Debug\HospitalManagementSystem.Console.DataSeed.pdb
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\bin\Debug\Multiplex.Models.Security.dll
+C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Console.DataSeed\bin\Debug\Multiplex.Models.dll

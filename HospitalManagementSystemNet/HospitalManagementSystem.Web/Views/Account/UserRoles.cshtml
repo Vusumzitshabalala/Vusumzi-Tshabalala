@@ -1,0 +1,73 @@
+﻿@model Multiplex.Models.Security.UserInRoles
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>User roles</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("Index", "Home")">Home</a>
+            </li>
+            <li><a href="@Url.Action("Users", "Account")">Users</a></li>
+            <li class="active">
+                <strong>User roles</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox-content">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                @using (@Html.BeginForm())
+                {                    
+                    <h3>Username/Cellphone: @Model.Username</h3>
+                    <br />
+                    @Html.Hidden("Username", Model.Username)
+                    foreach (var userInRole in Model.UserRoles)
+                    {
+                        <div class="checkbox i-checks">
+                            <label>
+                                @Html.CheckBox(userInRole.RoleName, userInRole.IsInRole)
+                                <i></i>
+                                @Html.Label(userInRole.RoleName)
+                            </label>
+                        </div>
+                        
+                    }
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" name="saveUserRole" value="Assign Roles" class="btn btn-primary" />
+                        <a href="@Url.Action("Users", "Account")" class="btn btn-white">Back to List</a>
+                    </div>
+                    
+                    <br />
+                    <br />
+                    @Model.StatusMessage
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    @Styles.Render("~/Content/plugins/iCheck/iCheckStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/iCheck")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+
+        });
+    </script>
+}

@@ -18,7 +18,7 @@ namespace HospitalManagementSystem.Web.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Login", "Account");
         }
 
         [HttpGet]

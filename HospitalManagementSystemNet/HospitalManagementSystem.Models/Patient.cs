@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HospitalManagementSystem.Models
 {
-    public class Patient        
+    public class Patient      
     {
         public Patient()
         {
