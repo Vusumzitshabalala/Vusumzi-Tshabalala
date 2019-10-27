@@ -51,6 +51,9 @@
     <Compile Include="IDoctorsRetriever.cs" />
     <Compile Include="INursesRetriever.cs" />
     <Compile Include="IPatientsRetriever.cs" />
+    <Compile Include="IPatientVisitRegistration.cs" />
+    <Compile Include="IPatientVisitRepository.cs" />
+    <Compile Include="IPatientVisitRetriever.cs" />
     <Compile Include="IPorterRetriever.cs" />
     <Compile Include="IPorterRepository.cs" />
     <Compile Include="INurseRegistration.cs" />

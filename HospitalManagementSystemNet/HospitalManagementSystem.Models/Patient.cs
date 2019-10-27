@@ -16,8 +16,7 @@ namespace HospitalManagementSystem.Models
 
         [ForeignKey("PersonId")]
         public Person Person { get; set; }
-        public string Diagonosis { get; set; }
-        public string Prescription { get; set; }
+       
 
     }
 }

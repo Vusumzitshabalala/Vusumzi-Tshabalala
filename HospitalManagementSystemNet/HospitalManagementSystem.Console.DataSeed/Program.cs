@@ -30,7 +30,7 @@ namespace HospitalManagementSystem.Console.DataSeed
                 new WardType()
                 {
                     Id = 1,
-                    Name = "Maternity"                    
+                    Name = "Maternity"
                 },
                 new WardType()
                 {
@@ -199,8 +199,8 @@ namespace HospitalManagementSystem.Console.DataSeed
                     Id = 6,
                     Name = "Cardiovascular Surgeon"
                 }
-                
-               
+
+
             });
             hospitalManagementSystemContext.Race.AddRange(new List<Race>() {
                 new Race()
@@ -286,6 +286,14 @@ namespace HospitalManagementSystem.Console.DataSeed
                 }
 
 
+            });
+
+            hospitalManagementSystemContext.Patient.AddRange(new List<Patient>()
+            {
+               new Patient()
+               {
+                   
+               }
             });
 
 
