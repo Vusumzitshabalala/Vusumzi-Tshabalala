@@ -4,7 +4,8 @@
 
 /HospitalManagementSystemNet/.vs/HospitalManagementSystemNet/config
 /HospitalManagementSystemNet/.vs/HospitalManagementSystemNet/v16/Server/sqlite3
-*.suo
 /obj
 /bin
 /.vs
+/logs
+*.suo
