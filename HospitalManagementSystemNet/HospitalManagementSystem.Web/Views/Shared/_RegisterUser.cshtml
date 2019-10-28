@@ -46,86 +46,58 @@
                     </div>
 
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-user padding-icon"></i></span>
+                        <span class="input-group-addon padding-icon"><i class="fa fa-user"></i></span>
                         @Html.TextBoxFor(ui => ui.FirstName, new { @class = "form-control", @placeholder = "First Name(s)" })
                         <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.FirstName)</span>
                     </div>
 
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-user padding-icon"></i></span>
+                        <span class="input-group-addon padding-icon"><i class="fa fa-user"></i></span>
                         @Html.TextBoxFor(ui => ui.Surname, new { @class = "form-control", @placeholder = "Surname" })
                         <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Surname)</span>
                     </div>
 
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-female"></i><i class="fa fa-male padding-icon"></i></span>
-                        @Html.DropDownListFor(ui => ui.GenderId, lookupHelper.SelectedListItems, new { @class = "form-control", @placeholder = "Surname" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.GenderId)</span>
+                        <span class="input-group-addon padding-icon"><i class="fa fa-female"></i><i class="fa fa-male"></i></span>
+                        @Html.DropDownListFor(ui => ui.GenderId, lookupHelper.SelectedListItems, new { @class = "form-control", @placeholder = "Gender" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.GenderId)</span>
                     </div>
 
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-phone padding-icon"></i></span>
-                        @Html.TextBoxFor(ui => ui.Cellphone, new { @class = "form-control", @placeholder = "Cellphone/Username" })
+                        <span class="input-group-addon padding-icon"><i class="fa fa-id-badge"></i></span>
+                        @Html.TextBoxFor(ui => ui.IdNumber, new { @class = "form-control", @placeholder = "Id Number" })
+                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.IdNumber)</span>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon padding-icon"><i class="fa fa-phone"></i></span>
+                        @Html.TextBoxFor(ui => ui.Cellphone, new { @class = "form-control", @placeholder = "Cellphone (Username)" })
                         <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Cellphone)</span>
                     </div>
-
-
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-envelope padding-icon"></i></span>
+                        <span class="input-group-addon padding-icon"><i class="fa fa-envelope"></i></span>
                         @Html.TextBoxFor(ui => ui.Email, new { @class = "form-control", @placeholder = "Email" })
                         <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Email)</span>
                     </div>
-                    <br />
-                    <div class="">
-                        <label class="pull-left">Date of Birth</label>
-                        @Html.TextBoxFor(ui => ui.DateOfBirth, new Dictionary<string, object> { { "readonly", "" }, { "class", "date form-control" } })
+                    <div class="input-group">
+                        <span class="input-group-addon padding-icon"><i class="fa fa-address-card"></i></span>
+                        @Html.TextAreaFor(ui => ui.Address, new { @class = "form-control", @placeholder = "Address" })
+                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Address)</span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon padding-icon"><i class="fa fa-calendar"></i></span>
+                        @Html.EditorFor(ui => ui.DateOfBirth, new Dictionary<string, object> { { "readonly", "" }, { "class", "date form-control" } })
 
                         <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.DateOfBirth)</span>
                     </div>
-                    <br />
-                    <div class="form-group">
-
-                        @Html.LabelFor(model => model.NationalityId, htmlAttributes: new { @class = "control-label col-md-2" })
-
-                        <div class="col-md-10">
-
-                            @Html.DropDownListFor(model => model.NationalityId, new List<SelectListItem>() { new SelectListItem() { Text = "South Africa", Value = "1" }, new SelectListItem() { Text = "Lesotho", Value = "1" } }, new { htmlAttributes = new { @class = "form-control" } })
-
-                            @Html.ValidationMessageFor(model => model.NationalityId, "", new { @class = "text-danger" })
-
-                        </div>
-
+                    <div class="input-group">
+                        <span class="input-group-addon padding-icon"><i class="fa fa-flag"></i></span>
+                        @Html.DropDownListFor(ui => ui.NationalityId, new List<SelectListItem>() { new SelectListItem() { Text = "South Africa", Value = "1" }, new SelectListItem() { Text = "Lesotho", Value = "1" } }, new { @class = "form-control", @placeholder = "Nationality" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.NationalityId)</span>
                     </div>
 
 
-
-                    <div class="form-group">
-
-                        @Html.LabelFor(model => model.GenderId, htmlAttributes: new { @class = "control-label col-md-2" })
-
-                        <div class="col-md-10">
-
-                            @Html.DropDownListFor(model => model.GenderId, new List<SelectListItem>() { new SelectListItem() { Text = "Male", Value = "1" }, new SelectListItem() { Text = "Female", Value = "2" } }, new { htmlAttributes = new { @class = "form-control" } })
-
-                            @Html.ValidationMessageFor(model => model.GenderId, "", new { @class = "text-danger" })
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="form-group">
-
-                        @Html.LabelFor(model => model.RaceId, htmlAttributes: new { @class = "control-label col-md-2" })
-
-                        <div class="col-md-10">
-
-                            @Html.DropDownListFor(model => model.RaceId, new List<SelectListItem>() { new SelectListItem() { Text = "Black", Value = "1" }, new SelectListItem() { Text = "Indian", Value = "2" }, new SelectListItem() { Text = "Coloured", Value = "3" }, new SelectListItem() { Text = "White", Value = "4" } }, new { htmlAttributes = new { @class = "form-control" } })
-
-                            @Html.ValidationMessageFor(model => model.RaceId, "", new { @class = "text-danger" })
-
-                        </div>
-
+                    <div class="input-group">
+                        <span class="input-group-addon padding-icon"><i class="fa fa-rainbow"></i></span>
+                        @Html.DropDownListFor(ui => ui.RaceId, new List<SelectListItem>() { new SelectListItem() { Text = "Black", Value = "1" }, new SelectListItem() { Text = "Indian", Value = "2" }, new SelectListItem() { Text = "Coloured", Value = "3" }, new SelectListItem() { Text = "White", Value = "4" } }, new { @class = "form-control", @placeholder = "Race" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.RaceId)</span>
                     </div>
 
                     <div class="input-group">
@@ -137,19 +109,18 @@
 
                     <br />
 
-
                     <div class="">
                         <button type="submit" class="btn btn-primary block full-width m-b" id="form_submit">Register</button>
                     </div>
                 }
-                <p class="m-t"> <small>Township Economy App &copy; 2015</small> </p>
+                <p class="m-t"> <small>Hospital Management System &copy; 2019</small> </p>
             </div>
 
         </div>
     </div>
 </div>
 
-        <!-- Modal -->
+<!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
 
@@ -170,25 +141,25 @@
 </div>
 
 <script>
-            $(document).ready(function () {
-                
-                //$("#form_submit").on("click", function () {
-                //    var value = $("#TandC").checked;
-                //    debugger
-                //    if (value)
-                //    {
-                //        return true;
-                //    } else {
-                //        return false;
-                //    }
-                //});
+    $(document).ready(function () {
 
-                $('.date').datepicker({
-                    format: 'yyyy-mm-dd',
-                    endDate: '-4747d'
-                });
+        //$("#form_submit").on("click", function () {
+        //    var value = $("#TandC").checked;
+        //    debugger
+        //    if (value)
+        //    {
+        //        return true;
+        //    } else {
+        //        return false;
+        //    }
+        //});
 
-            });
-    </script>
+        $('.date').datepicker({
+            format: 'yyyy-mm-dd',
+            endDate: '-4747d'
+        });
+
+    });
+</script>
 
 

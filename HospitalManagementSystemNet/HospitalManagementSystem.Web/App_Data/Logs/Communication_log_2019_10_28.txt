@@ -1,0 +1,18 @@
+====================================START=======================================
+Date: 10/28/2019 9:51:48 PM
+Severity: Error
+Message: The operation has timed out.    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Multiplex.DomainServices.Communication.DomainService.SendMail(String host, Int32 port, String username, String password, String from, String to, String cc, String bcc, String subject, String body, String attachmentDirectory)
+
+=====================================END========================================
+
+
+====================================START=======================================
+Date: 10/28/2019 10:12:05 PM
+Severity: Error
+Message: The operation has timed out.    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Multiplex.DomainServices.Communication.DomainService.SendMail(String host, Int32 port, String username, String password, String from, String to, String cc, String bcc, String subject, String body, String attachmentDirectory)
+
+=====================================END========================================
+
+

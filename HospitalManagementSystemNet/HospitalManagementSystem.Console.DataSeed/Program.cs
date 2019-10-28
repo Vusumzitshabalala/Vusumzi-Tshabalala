@@ -288,13 +288,13 @@ namespace HospitalManagementSystem.Console.DataSeed
 
             });
 
-            hospitalManagementSystemContext.Patient.AddRange(new List<Patient>()
-            {
-               new Patient()
-               {
+            //hospitalManagementSystemContext.Patient.AddRange(new List<Patient>()
+            //{
+            //   new Patient()
+            //   {
                    
-               }
-            });
+            //   }
+            //});
 
 
             hospitalManagementSystemContext.SaveChanges();
