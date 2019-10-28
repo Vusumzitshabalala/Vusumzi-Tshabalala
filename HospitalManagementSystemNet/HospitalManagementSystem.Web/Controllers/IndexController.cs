@@ -1,10 +1,12 @@
 ﻿using HospitalManagementSystem.Interfaces;
 using HospitalManagementSystem.Models;
+using HospitalManagementSystem.Web.Helpers;
+using System;
 using System.Web.Mvc;
 
 namespace HospitalManagementSystem.Web.Controllers
 {
-    public class IndexController : Controller
+    public class IndexController : BaseController
     {
         public IPatientRegistration PatientRegistration { get; }
         public IPatientsRetriever PatientsRetriever { get; }
@@ -24,6 +26,7 @@ namespace HospitalManagementSystem.Web.Controllers
         [HttpGet]
         public ActionResult CreatePatient()
         {
+            ViewBag.Title = "Patient Management";
             return View(new Patient());
         }
 
@@ -32,8 +35,19 @@ namespace HospitalManagementSystem.Web.Controllers
         {
             try
             {
+                var userId = Request.IsAuthenticated ? UserId : Guid.Empty;
+                var registerHelper = new RegisterHelper(userId, patient.Person);
+                registerHelper.Register();
+
+                if (!registerHelper.Response.Item1)
+                {
+                    patient.Person.Error = registerHelper.Response.Item2;
+                    return View(patient);
+                }
+
                 PatientRegistration.Register(patient);
-                return RedirectToAction("Index");
+
+                return RedirectToAction("RegisterSuccess", "Account", new { statusMessage = registerHelper.Response.Item2 });
             }
             catch
             {

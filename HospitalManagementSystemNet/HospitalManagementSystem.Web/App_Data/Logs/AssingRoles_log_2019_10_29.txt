@@ -1,0 +1,17 @@
+====================================START=======================================
+Date: 10/29/2019 1:02:22 AM
+Severity: Error
+Message: Failed to allocate Patien to 0714738611
+=====================================END========================================
+
+
+====================================START=======================================
+Date: 10/29/2019 1:02:22 AM
+Severity: Error
+Message: The role 'Patient' was not found.    at System.Web.Providers.DefaultRoleProvider.AddUsersToRoles(String[] usernames, String[] roleNames)
+   at System.Web.Security.Roles.AddUserToRoles(String username, String[] roleNames)
+   at Multiplex.DomainServices.Security.RoleAssignment.AssignUserRoles(String username, String[] roles)
+
+=====================================END========================================
+
+
