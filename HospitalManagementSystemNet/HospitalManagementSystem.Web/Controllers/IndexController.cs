@@ -47,5 +47,19 @@ namespace HospitalManagementSystem.Web.Controllers
             return View(PatientsRetriever.GetAllPatients());
         }
 
+        [HttpGet]
+        public ActionResult About()
+        {
+            ViewBag.Title = "About Us";
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Contact()
+        {
+            ViewBag.Title = "COntact Us";
+            return View();
+        }
+
     }
 }

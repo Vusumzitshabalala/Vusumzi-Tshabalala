@@ -307,6 +307,7 @@ namespace HospitalManagementSystem.Web.Controllers
         [AllowAnonymous]
         public ActionResult RegisterSuccess(string statusMessage)
         {
+            ViewBag.Title = "Successfully Registered";
             return View((object)statusMessage);
         }
 
