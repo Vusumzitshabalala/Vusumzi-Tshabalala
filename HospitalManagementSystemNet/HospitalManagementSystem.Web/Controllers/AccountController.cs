@@ -87,6 +87,7 @@ namespace HospitalManagementSystem.Web.Controllers
         public ActionResult ResetPassword(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
+            ViewBag.Title = "Reset Password";
             return View();
         }
 
@@ -107,6 +108,7 @@ namespace HospitalManagementSystem.Web.Controllers
             }
 
             person.Error = resetPassword.Item2;
+            ViewBag.Title = "Reset Password";
             return View(person);
         }
 
@@ -129,6 +131,7 @@ namespace HospitalManagementSystem.Web.Controllers
         [AllowAnonymous]
         public ActionResult ResetPasswordSuccess(string statusMessage)
         {
+            ViewBag.Title = "Reset Password Successful";
             return View((object)statusMessage);
         }
 
@@ -146,6 +149,7 @@ namespace HospitalManagementSystem.Web.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
+            ViewBag.Title = "My Profile";
             return View(person);
         }
 
@@ -337,6 +341,8 @@ namespace HospitalManagementSystem.Web.Controllers
                 usersInformation = usersInformation.Where(ui => !Roles.IsUserInRole(ui.UserName, HospitalManagementSystem.Models.Constants.Roles.SUPERADMINISTRATOR)).ToList();
             }
 
+            ViewBag.Title = "Users";
+
             return View(new Tuple<List<Person>, bool>(usersInformation, false));
         }
 
@@ -360,6 +366,8 @@ namespace HospitalManagementSystem.Web.Controllers
             {
                 userInRoles.UserRoles = userInRoles.UserRoles.Where(ur => ur.RoleName != HospitalManagementSystem.Models.Constants.Roles.SUPERADMINISTRATOR).ToList();
             }
+
+            ViewBag.Title = "User Roles";
 
             return View(userInRoles);
         }

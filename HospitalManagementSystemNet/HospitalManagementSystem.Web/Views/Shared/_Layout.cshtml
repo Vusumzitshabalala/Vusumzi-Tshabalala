@@ -46,11 +46,29 @@
                                 </li>
                                 @if (User.IsInRole("Doctor"))
                                 {
-
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Patients
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="../Doctor/ViewPatients">View Patients</a>
+                                            <a class="dropdown-item" href="../DOctor/ViewAppointments">View Appointments</a>
+                                        </div>
+                                    </li>
                                 }
                                 @if (User.IsInRole("Nurse"))
                                 {
-
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Patients
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="../Nurse/ViewPatients">View Patients</a>
+                                            <a class="dropdown-item" href="../Nurse/ViewAppointments">View Appointments</a>
+                                        </div>
+                                    </li>
                                 }
                                 @if (User.IsInRole("Administrator"))
                                 {
@@ -107,6 +125,25 @@
                                             <a class="dropdown-item" href="../Index/CreateAdministrator"> Create Administrator</a>
                                             <a class="dropdown-item" href="../Index/ViewAdministrators">View Administrators</a>
                                         </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            User Management
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="../Account/CreateAdministrator"> Create Administrator</a>
+                                            <a class="dropdown-item" href="../Account/Users">View Administrators</a>
+                                        </div>
+                                    </li>
+                                }
+                                @if (Request.IsAuthenticated)
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../Account/Profile">My Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../Account/ChangePassword">Change Password</a>
                                     </li>
                                 }
                                 <li class="nav-item">

@@ -27,90 +27,99 @@
     <div class="">
         <div class="row wrapper wrapper-content">
             <div class="">
-                @*<div><h1 class="logo-name">TEA</h1></div>*@
                 @using (Html.BeginForm())
                 {
-                    <div class="reg-header"> <h2>Create a new Account</h2> </div>
+                    <div class="form-horizontal">
+                        <h4>Create a new Account</h4>
+                        <hr />
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-1"> </div>
+                                <div class="col-md-10">
+                                    <p>By creating an account with us, you will be able to log on the system, however your access will be limited until Admin grants you access. If you already have an Account <a href="/Account/Login">click here</a> to Login.</p>
+                                    <br />
 
-                    <p>By creating an account with us, you will be able to log on the system, however your access will be limited until Admin grants you access. If you already have an Account <a href="/Account/Login">click here</a> to Login.</p>
-                    <br />
+                                    <div class="">
+                                        @if (Model != null && !string.IsNullOrWhiteSpace(Model.Error))
+                                        {
+                                            <div class="alert alert-warning" role="alert">
+                                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <strong>Outcome: </strong> @Model.Error
+                                            </div>
+                                        }
+                                    </div>
 
-                    <div class="">
-                        @if (Model != null && !string.IsNullOrWhiteSpace(Model.Error))
-                        {
-                            <div class="alert alert-warning" role="alert">
-                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <strong>Outcome: </strong> @Model.Error
+                                    <div class="input-group">
+                                        <span class="input-group-addon padding-icon"><i class="fa fa-user"></i></span>
+                                        @Html.TextBoxFor(ui => ui.FirstName, new { @class = "form-control", @placeholder = "First Name(s)" })
+                                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.FirstName)</span>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon padding-icon"><i class="fa fa-user"></i></span>
+                                        @Html.TextBoxFor(ui => ui.Surname, new { @class = "form-control", @placeholder = "Surname" })
+                                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Surname)</span>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon padding-icon"><i class="fa fa-female"></i><i class="fa fa-male"></i></span>
+                                        @Html.DropDownListFor(ui => ui.GenderId, lookupHelper.SelectedListItems, new { @class = "form-control", @placeholder = "Gender" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.GenderId)</span>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon padding-icon"><i class="fa fa-id-badge"></i></span>
+                                        @Html.TextBoxFor(ui => ui.IdNumber, new { @class = "form-control", @placeholder = "Id Number" })
+                                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.IdNumber)</span>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon padding-icon"><i class="fa fa-phone"></i></span>
+                                        @Html.TextBoxFor(ui => ui.Cellphone, new { @class = "form-control", @placeholder = "Cellphone (Username)" })
+                                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Cellphone)</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon padding-icon"><i class="fa fa-envelope"></i></span>
+                                        @Html.TextBoxFor(ui => ui.Email, new { @class = "form-control", @placeholder = "Email" })
+                                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Email)</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon padding-icon"><i class="fa fa-address-card"></i></span>
+                                        @Html.TextAreaFor(ui => ui.Address, new { @class = "form-control", @placeholder = "Address" })
+                                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Address)</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon padding-icon"><i class="fa fa-calendar"></i></span>
+                                        @Html.EditorFor(ui => ui.DateOfBirth, new Dictionary<string, object> { { "readonly", "" }, { "class", "date form-control" } })
+
+                                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.DateOfBirth)</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon padding-icon"><i class="fa fa-flag"></i></span>
+                                        @Html.DropDownListFor(ui => ui.NationalityId, new List<SelectListItem>() { new SelectListItem() { Text = "South Africa", Value = "1" }, new SelectListItem() { Text = "Lesotho", Value = "1" } }, new { @class = "form-control", @placeholder = "Nationality" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.NationalityId)</span>
+                                    </div>
+
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon padding-icon"><i class="fa fa-rainbow"></i></span>
+                                        @Html.DropDownListFor(ui => ui.RaceId, new List<SelectListItem>() { new SelectListItem() { Text = "Black", Value = "1" }, new SelectListItem() { Text = "Indian", Value = "2" }, new SelectListItem() { Text = "Coloured", Value = "3" }, new SelectListItem() { Text = "White", Value = "4" } }, new { @class = "form-control", @placeholder = "Race" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.RaceId)</span>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <input type="checkbox" id="TandC">
+                                        <label for="TandC" class="checkbox-inline i-checks">
+                                            &nbsp; I read <a data-toggle="modal" data-target="#myModal" href="">Terms and Conditions</a>
+                                        </label>
+                                    </div>
+
+                                    <br />
+
+                                    <div class="">
+                                        <button type="submit" class="btn btn-primary block full-width m-b" id="form_submit">Register</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"> </div>
                             </div>
-                        }
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon padding-icon"><i class="fa fa-user"></i></span>
-                        @Html.TextBoxFor(ui => ui.FirstName, new { @class = "form-control", @placeholder = "First Name(s)" })
-                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.FirstName)</span>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon padding-icon"><i class="fa fa-user"></i></span>
-                        @Html.TextBoxFor(ui => ui.Surname, new { @class = "form-control", @placeholder = "Surname" })
-                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Surname)</span>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon padding-icon"><i class="fa fa-female"></i><i class="fa fa-male"></i></span>
-                        @Html.DropDownListFor(ui => ui.GenderId, lookupHelper.SelectedListItems, new { @class = "form-control", @placeholder = "Gender" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.GenderId)</span>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon padding-icon"><i class="fa fa-id-badge"></i></span>
-                        @Html.TextBoxFor(ui => ui.IdNumber, new { @class = "form-control", @placeholder = "Id Number" })
-                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.IdNumber)</span>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon padding-icon"><i class="fa fa-phone"></i></span>
-                        @Html.TextBoxFor(ui => ui.Cellphone, new { @class = "form-control", @placeholder = "Cellphone (Username)" })
-                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Cellphone)</span>
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon padding-icon"><i class="fa fa-envelope"></i></span>
-                        @Html.TextBoxFor(ui => ui.Email, new { @class = "form-control", @placeholder = "Email" })
-                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Email)</span>
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon padding-icon"><i class="fa fa-address-card"></i></span>
-                        @Html.TextAreaFor(ui => ui.Address, new { @class = "form-control", @placeholder = "Address" })
-                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Address)</span>
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon padding-icon"><i class="fa fa-calendar"></i></span>
-                        @Html.EditorFor(ui => ui.DateOfBirth, new Dictionary<string, object> { { "readonly", "" }, { "class", "date form-control" } })
-
-                        <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.DateOfBirth)</span>
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon padding-icon"><i class="fa fa-flag"></i></span>
-                        @Html.DropDownListFor(ui => ui.NationalityId, new List<SelectListItem>() { new SelectListItem() { Text = "South Africa", Value = "1" }, new SelectListItem() { Text = "Lesotho", Value = "1" } }, new { @class = "form-control", @placeholder = "Nationality" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.NationalityId)</span>
-                    </div>
-
-
-                    <div class="input-group">
-                        <span class="input-group-addon padding-icon"><i class="fa fa-rainbow"></i></span>
-                        @Html.DropDownListFor(ui => ui.RaceId, new List<SelectListItem>() { new SelectListItem() { Text = "Black", Value = "1" }, new SelectListItem() { Text = "Indian", Value = "2" }, new SelectListItem() { Text = "Coloured", Value = "3" }, new SelectListItem() { Text = "White", Value = "4" } }, new { @class = "form-control", @placeholder = "Race" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.RaceId)</span>
-                    </div>
-
-                    <div class="input-group">
-                        <input type="checkbox" id="TandC">
-                        <label for="TandC" class="checkbox-inline i-checks">
-                            &nbsp; I read <a data-toggle="modal" data-target="#myModal" href="">Terms and Conditions</a>
-                        </label>
-                    </div>
-
-                    <br />
-
-                    <div class="">
-                        <button type="submit" class="btn btn-primary block full-width m-b" id="form_submit">Register</button>
+                        </div>
                     </div>
                 }
                 <p class="m-t"> <small>Hospital Management System &copy; 2019</small> </p>
