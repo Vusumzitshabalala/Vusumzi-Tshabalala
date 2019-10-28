@@ -21,8 +21,6 @@ namespace HospitalManagementSystem.Tests
 
             Patient patient = new Patient();
 
-            patient.Diagonosis = "Diagnosis";
-            patient.Prescription = "Prescription";
             patient.PersonId = 1;
             patient.Person.Id = 1;
             patient.Person.FirstName = "Vusi";
