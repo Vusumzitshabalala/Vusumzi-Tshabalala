@@ -2,7 +2,7 @@
 
 namespace HospitalManagementSystem.Interfaces
 {
-    public interface IPatientVistrRetriever
+    public interface IPatientVisitRetriever
     {
         void Retrieve(string IdentityNumber);
 

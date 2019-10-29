@@ -15,3 +15,54 @@ Message: The role 'Patient' was not found.    at System.Web.Providers.DefaultRol
 =====================================END========================================
 
 
+====================================START=======================================
+Date: 10/29/2019 1:28:19 AM
+Severity: Error
+Message: Failed to allocate Patien to 0730342074
+=====================================END========================================
+
+
+====================================START=======================================
+Date: 10/29/2019 1:28:19 AM
+Severity: Error
+Message: The role 'Patient' was not found.    at System.Web.Providers.DefaultRoleProvider.AddUsersToRoles(String[] usernames, String[] roleNames)
+   at System.Web.Security.Roles.AddUserToRoles(String username, String[] roleNames)
+   at Multiplex.DomainServices.Security.RoleAssignment.AssignUserRoles(String username, String[] roles)
+
+=====================================END========================================
+
+
+====================================START=======================================
+Date: 10/29/2019 1:43:44 AM
+Severity: Error
+Message: Failed to allocate Patien to 0730342074
+=====================================END========================================
+
+
+====================================START=======================================
+Date: 10/29/2019 1:43:44 AM
+Severity: Error
+Message: The role 'Patient' was not found.    at System.Web.Providers.DefaultRoleProvider.AddUsersToRoles(String[] usernames, String[] roleNames)
+   at System.Web.Security.Roles.AddUserToRoles(String username, String[] roleNames)
+   at Multiplex.DomainServices.Security.RoleAssignment.AssignUserRoles(String username, String[] roles)
+
+=====================================END========================================
+
+
+====================================START=======================================
+Date: 10/29/2019 1:52:12 AM
+Severity: Error
+Message: Failed to allocate Patien to 0832952534
+=====================================END========================================
+
+
+====================================START=======================================
+Date: 10/29/2019 1:52:12 AM
+Severity: Error
+Message: The role 'Patient' was not found.    at System.Web.Providers.DefaultRoleProvider.AddUsersToRoles(String[] usernames, String[] roleNames)
+   at System.Web.Security.Roles.AddUserToRoles(String username, String[] roleNames)
+   at Multiplex.DomainServices.Security.RoleAssignment.AssignUserRoles(String username, String[] roles)
+
+=====================================END========================================
+
+
