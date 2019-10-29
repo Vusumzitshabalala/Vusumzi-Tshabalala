@@ -5815,7 +5815,7 @@ h6 {
 
     /* line 10, /Applications/MAMP/htdocs/palash/cl/july 2019/189 travel/189 travel html/sass/_breadcrumb.scss */
     .breadcrumb .breadcrumb_iner {
-        height: 200px;
+        height: 220px;
         width: 100%;
         display: table;
     }
@@ -5836,7 +5836,7 @@ h6 {
     /* line 21, /Applications/MAMP/htdocs/palash/cl/july 2019/189 travel/189 travel html/sass/_breadcrumb.scss */
     .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
         color: #fff;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 500;
         margin-bottom: 10px;
         text-transform: capitalize;

@@ -222,7 +222,7 @@ namespace HospitalManagementSystem.Web.Controllers
                     return Redirect(returnUrl);
                 }
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Profile", "Account");
             }
 
             person.Error = changePassword.Item2;
@@ -257,7 +257,7 @@ namespace HospitalManagementSystem.Web.Controllers
         {
             FormsAuthentication.SignOut();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
 
         #endregion Log Off
@@ -325,7 +325,7 @@ namespace HospitalManagementSystem.Web.Controllers
             var securityService = new UserManager();
             securityService.LockUnclockUser<HospitalManagementSystemContext>(username, isLocked);
 
-            return RedirectToAction("Users");
+            return RedirectToAction("Users","Account");
         }
 
         #endregion Lock / Unlock User

@@ -45,6 +45,7 @@ namespace HospitalManagementSystem.Web.Controllers
                     return View(patient);
                 }
 
+                patient.PersonId = patient.Person.Id;
                 PatientRegistration.Register(patient);
 
                 return RedirectToAction("RegisterSuccess", "Account", new { statusMessage = registerHelper.Response.Item2 });
