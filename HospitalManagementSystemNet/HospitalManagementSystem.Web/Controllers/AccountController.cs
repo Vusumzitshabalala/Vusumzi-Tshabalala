@@ -56,10 +56,10 @@ namespace HospitalManagementSystem.Web.Controllers
                 {
                     FormsAuthentication.SetAuthCookie(person.UserName, false);
 
-                    //if (person.DateOfBirth.AddYears(13) > DateTime.Now && !User.IsInRole(Multiplex.Models.Tea.Constants.CLIENT))
+                    //if (person.DateOfBirth.AddYears(13) > DateTime.Now && !User.IsInRole(HospitalManagementSystem.Models.Constants.CLIENT))
                     //{
                     //    var roleAssignment = new RoleAssignment();
-                    //    roleAssignment.AssignUserRole(person.UserName, Multiplex.Models.Tea.Constants.CLIENT);
+                    //    roleAssignment.AssignUserRole(person.UserName, HospitalManagementSystem.Models.Constants.CLIENT);
                     //}
 
                     if (!string.IsNullOrWhiteSpace(returnUrl))
@@ -189,12 +189,14 @@ namespace HospitalManagementSystem.Web.Controllers
         [Authorize]
         public ActionResult ChangePassword()
         {
+            ViewBag.Title = "Change Password";
             return View(Person);
         }
 
         [AllowAnonymous]
         public ActionResult ChangeGeneratedPassword(Person person)
         {
+            ViewBag.Title = "Change Password";
             return View(person);
         }
 
@@ -285,11 +287,11 @@ namespace HospitalManagementSystem.Web.Controllers
 
             //if (person.DateOfBirth.AddYears(13) < DateTime.Now)
             //{
-            //    roles = new string[] { Multiplex.Models.Tea.Constants.CLIENT };
+            //    roles = new string[] { HospitalManagementSystem.Models.Constants.CLIENT };
             //}
             //else
             //{
-            //    roles = new string[] { Multiplex.Models.Tea.Constants.USER };
+            //    roles = new string[] { HospitalManagementSystem.Models.Constants.USER };
             //}
 
             ////((UserInfo)person).Cellphone = person.Cellphone;
@@ -385,6 +387,8 @@ namespace HospitalManagementSystem.Web.Controllers
 
                 userRoleUpdate.UpdateUserRoles(username, formUserInRoles);
             }
+
+            ViewBag.Title = "User Roles";
 
             return RedirectToAction("UserRoles", new { username = username });
         }

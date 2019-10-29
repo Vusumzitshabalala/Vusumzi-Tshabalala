@@ -7,3 +7,12 @@ Message: The operation has timed out.    at System.Net.Mail.SmtpClient.Send(Mail
 =====================================END========================================
 
 
+====================================START=======================================
+Date: 10/29/2019 11:58:50 PM
+Severity: Error
+Message: The operation has timed out.    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Multiplex.DomainServices.Communication.DomainService.SendMail(String host, Int32 port, String username, String password, String from, String to, String cc, String bcc, String subject, String body, String attachmentDirectory)
+
+=====================================END========================================
+
+

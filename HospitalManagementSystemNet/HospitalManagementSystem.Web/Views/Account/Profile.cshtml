@@ -1,135 +1,124 @@
-﻿@model HospitalManagementSystem.Models.Person
+﻿
+@using HospitalManagementSystem.Web.Helpers;
+@model HospitalManagementSystem.Models.Person
 @{
     Layout = "..\\Shared\\_Layout.cshtml";
 }
+@{
+    var lookupHelper = new LookupHelper();
+    lookupHelper.GetGenders(Model.GenderId);
+}
 
-<div class="wrapper wrapper-content animated fadeInRight">
-    <div class="ibox-content">
-        <div class="row">
-            <div class="col-xs-12">
-                @using (Html.BeginForm("Profile", "Account"))
+<div class="panel-top-padding view-panel">
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div class="wrapper wrapper-content">
+            @using (Html.BeginForm("Profile", "Account"))
+            {
+                <h4>Edit Profile</h4>
+                <hr />
+                if (Model != null && !string.IsNullOrWhiteSpace(Model.Error))
                 {
-                    <div class="form-group">
-                        <h2>Profile Details</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="alert alert-success" role="alert">
+                                <button type="button" class="close" data-dismiss="alert">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                                <strong>Outcome: </strong> @Model.Error
+                            </div>
+                        </div>
                     </div>
-                    <br />
-                    if (Model != null && !string.IsNullOrWhiteSpace(Model.Error))
-                    {
-                        <div class="row">
-                            <div class="col-xs-12 col-md-12">
-                                <div class="alert alert-success" role="alert">
-                                    <button type="button" class="close" data-dismiss="alert">
-                                        <span aria-hidden="true">&times;</span>
-                                        <span class="sr-only">Close</span>
-                                    </button>
-                                    <strong>Outcome: </strong> @Model.Error
-                                </div>
-                            </div>
-                        </div>
-                    }
-                    @Html.HiddenFor(ui => ui.Id)
-                    @Html.HiddenFor(ui => ui.CreatedById)
-                    @Html.HiddenFor(ui => ui.DateCreated)
-                    @Html.HiddenFor(ui => ui.ModifiedById)
-                    @Html.HiddenFor(ui => ui.DateModified)
-                    @Html.HiddenFor(ui => ui.Active)
-                    @Html.HiddenFor(ui => ui.UserId)
-                    @Html.HiddenFor(ui => ui.PasswordChanged)
-                    @Html.HiddenFor(ui => ui.GenderId)
-                    @Html.HiddenFor(ui => ui.DateOfBirth)
+                }
+                @Html.HiddenFor(ui => ui.Id)
+                @Html.HiddenFor(ui => ui.CreatedById)
+                @Html.HiddenFor(ui => ui.DateCreated)
+                @Html.HiddenFor(ui => ui.ModifiedById)
+                @Html.HiddenFor(ui => ui.DateModified)
+                @Html.HiddenFor(ui => ui.Active)
+                @Html.HiddenFor(ui => ui.UserId)
+                @Html.HiddenFor(ui => ui.PasswordChanged)
+                @Html.HiddenFor(ui => ui.GenderId)
+                @Html.HiddenFor(ui => ui.DateOfBirth)
 
-                    <div class="">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                @Html.LabelFor(ui => ui.UserName)
-                                @Html.TextBoxFor(ui => ui.UserName, new { @readonly = "readonly", @class = "form-control" })
-                                <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.UserName)</span>
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(ui => ui.Email)
-                                <div>
-                                    @Html.TextBoxFor(ui => ui.Email, new { @class = "form-control" })
-                                <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.Email)</span>
-                            </div>
+                <div class="">
+                    <div class="col-lg-1"> </div>
+                    <div class="col-lg-10">
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-phone"></i></span>
+                            @Html.TextBoxFor(ui => ui.UserName, new { @readonly = "readonly", @class = "form-control" })
+                            <br />
+                            (Username)
+                            <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.UserName)</span>
                         </div>
 
-                        <div class="form-group">
-                            @Html.LabelFor(ui => ui.FirstName)
-                            <div>
-                                @Html.TextBoxFor(ui => ui.FirstName, new { @class = "form-control" })
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-user-alt"></i></span>
+                            @Html.TextBoxFor(ui => ui.FirstName, new { @class = "form-control" })
                             <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.FirstName)</span>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        @Html.LabelFor(ui => ui.Surname)
-                        <div>
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-user-alt"></i></span>
                             @Html.TextBoxFor(ui => ui.Surname, new { @class = "form-control" })
-                        <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.Surname)</span>
+                            <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.Surname)</span>
+                        </div>
+
+
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-female"></i><i class="fa fa-male"></i></span>
+                            @Html.DropDownListFor(ui => ui.GenderId, lookupHelper.SelectedListItems, new { @class = "form-control", @placeholder = "Gender" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.GenderId)</span>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-id-badge"></i></span>
+                            @Html.TextBoxFor(ui => ui.IdNumber, new { @class = "form-control", @placeholder = "Id Number" })
+                            <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.IdNumber)</span>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-phone"></i></span>
+                            @Html.TextBoxFor(ui => ui.Cellphone, new { @class = "form-control" })
+                            <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.Cellphone)</span>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-envelope"></i></span>
+                            @Html.TextBoxFor(ui => ui.Email, new { @class = "form-control" })
+                            <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.Email)</span>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-address-card"></i></span>
+                            @Html.TextAreaFor(ui => ui.Address, new { @class = "form-control", @placeholder = "Address" })
+                            <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Address)</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-calendar-alt"></i></span>
+                            @Html.EditorFor(ui => ui.DateOfBirth, new Dictionary<string, object> { { "readonly", "" }, { "class", "date form-control" } })
+
+                            <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.DateOfBirth)</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-flag"></i></span>
+                            @Html.DropDownListFor(ui => ui.NationalityId, new List<SelectListItem>() { new SelectListItem() { Text = "South Africa", Value = "1" }, new SelectListItem() { Text = "Lesotho", Value = "1" } }, new { @class = "form-control", @placeholder = "Nationality" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.NationalityId)</span>
+                        </div>
+
+
+                        <div class="input-group">
+                            <span class="input-group-addon padding-icon"><i class="fa fa-rainbow"></i></span>
+                            @Html.DropDownListFor(ui => ui.RaceId, new List<SelectListItem>() { new SelectListItem() { Text = "Black", Value = "1" }, new SelectListItem() { Text = "Indian", Value = "2" }, new SelectListItem() { Text = "Coloured", Value = "3" }, new SelectListItem() { Text = "White", Value = "4" } }, new { @class = "form-control", @placeholder = "Race" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.RaceId)</span>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary pull-right" type="submit">Save</button>
+                        </div>
                     </div>
+                    <div class="col-lg-1"> </div>
                 </div>
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <div class="form-group">
-                    @Html.LabelFor(ui => ui.Cellphone)
-                    <div>
-                        @Html.TextBoxFor(ui => ui.Cellphone, new { @class = "form-control" })
-                        <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.Cellphone)</span>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    @Html.LabelFor(ui => ui.TelephoneHome)
-                    <div>
-                        @Html.TextBoxFor(ui => ui.TelephoneHome, new { @class = "form-control" })
-                    <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.TelephoneHome)</span>
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(ui => ui.TelephoneWork)
-                <div>
-                    @Html.TextBoxFor(ui => ui.TelephoneWork, new { @class = "form-control" })
-                <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.TelephoneWork)</span>
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(ui => ui.ResidentialAddress)
-            <div>
-                @Html.TextAreaFor(ui => ui.ResidentialAddress,
-       new { @class = "form-control", @rows = "2" })
-            <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.ResidentialAddress)</span>
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(ui => ui.PostalAddress)
-        <div>
-            @Html.TextAreaFor(ui => ui.PostalAddress, new { @class = "form-control", @rows = "2" })
-        <span class="alert-warning"> @Html.ValidationMessageFor(ui => ui.PostalAddress)</span>
-    </div>
-</div>
-<div class="form-group">
-    <button class="btn btn-primary btn-lg pull-right" type="submit">Save</button>
-</div>
-</div>
-@*<div class="row">
-
-    </div>*@
-</div>
-}
-            </div>
-
-
+            }
         </div>
     </div>
 </div>
-
 @*<div class="panel-top-padding view-panel">
         <div class="std-top-padding" style="max-width: 630px;  margin: 0 auto;">
             <div class="container">

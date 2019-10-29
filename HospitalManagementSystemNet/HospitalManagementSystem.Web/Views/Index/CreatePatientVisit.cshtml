@@ -1,0 +1,31 @@
+﻿
+@model HospitalManagementSystem.Models.PatientVisit
+@{
+    Layout = "..\\Shared\\_Layout.cshtml";
+}
+
+<div class="panel-top-padding view-panel">
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div class="wrapper wrapper-content">
+            @using (Html.BeginForm())
+            {
+
+                <div class="form-horizontal">
+                    @Html.AntiForgeryToken()
+
+                    <h4>Create Patient Visit</h4>
+                    <hr />
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1"> </div>
+                            <div class="col-md-10">
+                            </div>
+                            <div class="col-md-1"> </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

@@ -30,6 +30,20 @@ namespace HospitalManagementSystem.Web.Controllers
             return View(new Patient());
         }
 
+        [HttpGet]
+        public ActionResult CreatePatientVisit()
+        {
+            ViewBag.Title = "Patient Management";
+            return View(new PatientVisit());
+        }
+
+        [HttpGet]
+        public ActionResult CreatePatientAppointment()
+        {
+            ViewBag.Title = "Patient Management";
+            return View(new DoctorAppointment());
+        }
+
         [HttpPost]
         public ActionResult CreatePatient(Patient patient)
         {

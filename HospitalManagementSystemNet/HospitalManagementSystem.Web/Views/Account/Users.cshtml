@@ -1,33 +1,16 @@
 ﻿@model Tuple<List<HospitalManagementSystem.Models.Person>, bool>
-@using Multiplex.Models.Tea;
+@using HospitalManagementSystem.Models.Web;
 
 
-    <link href="~/Content/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/plugins/dataTables/dataTables.responsive.css" rel="stylesheet" />
-    <link href="~/Content/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet" />
+<link href="~/Content/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+<link href="~/Content/plugins/dataTables/dataTables.responsive.css" rel="stylesheet" />
+<link href="~/Content/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet" />
 
-    <script src="~/Scripts/plugins/dataTables/jquery.dataTables.js"></script>
-    <script src="~/Scripts/plugins/dataTables/dataTables.bootstrap.js"></script>
-    <script src="~/Scripts/plugins/dataTables/dataTables.responsive.js"></script>
-    <script src="~/Scripts/plugins/dataTables/dataTables.tableTools.min.js"></script>
-      
+<script src="~/Scripts/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="~/Scripts/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script src="~/Scripts/plugins/dataTables/dataTables.responsive.js"></script>
+<script src="~/Scripts/plugins/dataTables/dataTables.tableTools.min.js"></script>
 
-<div class="row wrapper border-bottom white-bg page-heading">
-    <div class="col-lg-10">
-        <h2>Users</h2>
-        <ol class="breadcrumb">
-            <li>
-                <a href="@Url.Action("Index", "Home")">Home</a>
-            </li>
-            <li class="active">
-                <strong>Users</strong>
-            </li>
-        </ol>
-    </div>
-    <div class="col-lg-2">
-
-    </div>
-</div>
 
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="ibox-content row">
@@ -56,7 +39,7 @@
                                     <td class="hidden-sm">@(userInformation.FirstName + " " + userInformation.Surname)</td>
                                     <td>
                                         @Html.ActionLink("Edit", "ProfileByUsername", new { username = userInformation.UserName }, new { @class = "btn btn-white btn-sm" })
-                                        @if (User != null && User.IsInRole(Constants.ROLE_ADMIN))
+                                        @if (User != null && User.IsInRole(HospitalManagementSystem.Models.Constants.Roles.ADMINISTRATOR))
                                         {
                                             @Html.ActionLink("Roles", "UserRoles", new { username = userInformation.UserName }, new { @class = "btn btn-white btn-sm" })
                                         }
@@ -72,7 +55,7 @@
 
                                             }
                                         }
-                                        @if (User != null && User.IsInRole(Constants.ROLE_ADMIN))
+                                        @if (User != null && User.IsInRole(HospitalManagementSystem.Models.Constants.Roles.ADMINISTRATOR))
                                         {
                                             @Html.ActionLink("Businesses", "ClientBusinesses", "BusinessProfile", new { userInformationId = userInformation.Id }, new { @class = "btn btn-white btn-sm" })
                                         }
@@ -93,7 +76,7 @@
     $(function () {
         $(document).ready(function () {
             $('.grid').dataTable({
-               responsive: true
+                responsive: true
             });
         });
     }(jQuery));
