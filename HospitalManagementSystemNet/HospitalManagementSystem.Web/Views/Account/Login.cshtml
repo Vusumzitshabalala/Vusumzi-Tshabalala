@@ -16,13 +16,13 @@
             <p>If you have an account please log in. If you don't have an account <a href="/Account/Register">click here</a> to Register.</p>
             <br />
             <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <span class="input-group-addon padding-icon"><i class="fa fa-user"></i></span>
                 @Html.TextBoxFor(ui => ui.UserName, new { @class = "form-control", @placeholder = "Username" })
                 <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.UserName)</span>
             </div>
             <br />
             <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                <span class="input-group-addon padding-icon"><i class="fa fa-lock"></i></span>
                 @Html.PasswordFor(ui => ui.Password, new { @class = "form-control", @placeholder = "Password" })
                 <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Password)</span>
             </div>
@@ -51,7 +51,8 @@
             </div>
             <hr>
             <h4>Forgot your Password ?</h4>
-            <p>No worries, <a class="color-yellow" data-toggle="modal" data-target="#myModal" href="">click here</a> to reset your password.</p>
+            <p> <a href="../Account/ResetPassword">Click Here</a> to reset your password. </p>
+            @*<p>No worries, <a class="color-yellow" data-toggle="modal" data-target="#myModal" href="">click here</a> to reset your password.</p>*@
 
         }
         <p class="m-t"> <small>Hospital Management System &copy; 2019</small> </p>

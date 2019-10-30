@@ -30,6 +30,20 @@ namespace HospitalManagementSystem.Web.Controllers
             return View(new Patient());
         }
 
+        [HttpGet]
+        public ActionResult CreatePatientVisit()
+        {
+            ViewBag.Title = "Patient Management";
+            return View(new PatientVisit());
+        }
+
+        [HttpGet]
+        public ActionResult CreatePatientAppointment()
+        {
+            ViewBag.Title = "Patient Management";
+            return View(new DoctorAppointment());
+        }
+
         [HttpPost]
         public ActionResult CreatePatient(Patient patient)
         {
@@ -45,6 +59,7 @@ namespace HospitalManagementSystem.Web.Controllers
                     return View(patient);
                 }
 
+                patient.PersonId = patient.Person.Id;
                 PatientRegistration.Register(patient);
 
                 return RedirectToAction("RegisterSuccess", "Account", new { statusMessage = registerHelper.Response.Item2 });
