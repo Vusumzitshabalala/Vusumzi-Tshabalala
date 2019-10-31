@@ -20,7 +20,13 @@ namespace HospitalManagementSystem.Web.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return RedirectToAction("Login", "Account");
+            RedirectToRouteResult result = RedirectToAction("Login", "Account");
+
+            if (Request.IsAuthenticated)
+            {
+                result = RedirectToAction("Profile", "Account");
+            }
+            return result;
         }
 
         [HttpGet]

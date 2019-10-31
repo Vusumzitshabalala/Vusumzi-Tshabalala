@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\HospitalManagementSystem.Console.DataSeed.csproj": {}
   },
   "projects": {
@@ -17,6 +18,28 @@
         "configFilePaths": [
           "C:\\Users\\stshabalala\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+    "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\HospitalManagementSystem.Console.DataSeed.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\HospitalManagementSystem.Console.DataSeed.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\HospitalManagementSystem.Console.DataSeed.csproj",
+        "projectName": "HospitalManagementSystem.Console.DataSeed",
+        "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\HospitalManagementSystem.Console.DataSeed.csproj",
+        "packagesPath": "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Console.DataSeed\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thabiso.Molise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> 9e5af50027a107c2616c42b3db497c7fcffa96fa
         ],
         "originalTargetFrameworks": [
           "net472"
@@ -28,6 +51,7 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
                 "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj"
               },
@@ -36,6 +60,16 @@
               },
               "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj": {
                 "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj"
+=======
+              "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
+                "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj"
+              },
+              "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
+                "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+              },
+              "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj": {
+                "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj"
+>>>>>>> 9e5af50027a107c2616c42b3db497c7fcffa96fa
               }
             }
           }
@@ -63,6 +97,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -74,6 +109,19 @@
             "projectReferences": {
               "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
                 "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+=======
+    "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj",
+        "projectName": "HospitalManagementSystem.Interfaces",
+        "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
+                "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+>>>>>>> 9e5af50027a107c2616c42b3db497c7fcffa96fa
               }
             }
           }
@@ -83,6 +131,7 @@
         "net472": {}
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -96,6 +145,25 @@
         "configFilePaths": [
           "C:\\Users\\stshabalala\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+    "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj",
+        "projectName": "HospitalManagementSystem.Ioc",
+        "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj",
+        "packagesPath": "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thabiso.Molise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> 9e5af50027a107c2616c42b3db497c7fcffa96fa
         ],
         "originalTargetFrameworks": [
           "net472"
@@ -140,17 +208,27 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj",
         "projectName": "HospitalManagementSystem.Models",
         "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+=======
+    "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj",
+        "projectName": "HospitalManagementSystem.Models",
+        "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+>>>>>>> 9e5af50027a107c2616c42b3db497c7fcffa96fa
       },
       "frameworks": {
         "net472": {}
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -164,6 +242,25 @@
         "configFilePaths": [
           "C:\\Users\\stshabalala\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+    "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj",
+        "projectName": "HospitalManagementSystem.Repository",
+        "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\HospitalManagementSystem.Repository.csproj",
+        "packagesPath": "C:\\Users\\Thabiso.Molise\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thabiso.Molise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> 9e5af50027a107c2616c42b3db497c7fcffa96fa
         ],
         "originalTargetFrameworks": [
           "net472"
@@ -175,6 +272,7 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj": {
                 "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj"
               },
@@ -183,6 +281,16 @@
               },
               "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
                 "projectPath": "C:\\Users\\stshabalala\\source\\Repo\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+=======
+              "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Interfaces\\HospitalManagementSystem.Interfaces.csproj"
+              },
+              "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj": {
+                "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Ioc\\HospitalManagementSystem.Ioc.csproj"
+              },
+              "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj": {
+                "projectPath": "C:\\Users\\Thabiso.Molise\\Source\\Repos\\Vusumzi-Tshabalala\\HospitalManagementSystemNet\\HospitalManagementSystem.Models\\HospitalManagementSystem.Models.csproj"
+>>>>>>> 9e5af50027a107c2616c42b3db497c7fcffa96fa
               }
             }
           }
