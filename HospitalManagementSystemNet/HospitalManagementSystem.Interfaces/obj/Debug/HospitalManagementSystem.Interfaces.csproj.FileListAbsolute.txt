@@ -15,8 +15,8 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\bin\Debug\Multiplex.Models.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\bin\Debug\Multiplex.Models.Security.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\bin\Debug\HospitalManagementSystem.Models.pdb
-C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.csprojAssemblyReference.cache
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.csproj.CoreCompileInputs.cache
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.csproj.CopyComplete
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Interfaces\obj\Debug\HospitalManagementSystem.Interfaces.csprojAssemblyReference.cache
