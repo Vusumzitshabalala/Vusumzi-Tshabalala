@@ -43,6 +43,11 @@ IF NOT EXISTS(SELECT * FROM UsersInRoles WHERE UserId = @thabisomId AND RoleId =
 	BEGIN
 		INSERT INTO UsersInRoles(UserId,RoleId) VALUES(@thabisomId,@adminId)
 	END
+    
+IF NOT EXISTS(SELECT * FROM UsersInRoles WHERE UserId = @thabisomId AND RoleId = @roleId  ) AND @thabisomId IS NOT NULL
+	BEGIN
+		INSERT INTO UsersInRoles(UserId,RoleId) VALUES(@thabisomId,@roleId)
+	END
 
 IF NOT EXISTS(SELECT * FROM UsersInRoles WHERE UserId = @vusiId AND RoleId = @roleId  ) AND @vusiId IS NOT NULL
 	BEGIN
