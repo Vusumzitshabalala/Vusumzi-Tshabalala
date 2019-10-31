@@ -10,3 +10,11 @@
 /logs
 *.suo
 *.user
+/HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj/project.assets.json
+/HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj/HospitalManagementSystem.Console.DataSeed.csproj.nuget.g.targets
+/HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj/HospitalManagementSystem.Console.DataSeed.csproj.nuget.g.props
+/HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj/HospitalManagementSystem.Console.DataSeed.csproj.nuget.dgspec.json
+/HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj/Debug/HospitalManagementSystem.Console.DataSeed.csproj.FileListAbsolute.txt
+/HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj/Debug
+/HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj
