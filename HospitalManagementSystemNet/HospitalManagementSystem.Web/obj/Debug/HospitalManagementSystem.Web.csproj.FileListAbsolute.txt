@@ -116,8 +116,6 @@ C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystem
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\Multiplex.Utilities.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\System.Web.Providers.dll
 C:\Users\Thabiso.Molise\Source\Repos\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\System.Web.Providers.xml
-C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\obj\Debug\HospitalManagementSystem.Web.csprojAssemblyReference.cache
-C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\obj\Debug\HospitalManagementSystem.Web.csproj.CoreCompileInputs.cache
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\HospitalManagementSystem.Web.dll.config
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\HospitalManagementSystem.Web.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\HospitalManagementSystem.Web.pdb
@@ -231,6 +229,8 @@ C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\System.Web.Helpers.xml
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\System.Web.Mvc.xml
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\bin\Unity.Interception.pdb
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\obj\Debug\HospitalManagementSystem.Web.csprojAssemblyReference.cache
+C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\obj\Debug\HospitalManagementSystem.Web.csproj.CoreCompileInputs.cache
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\obj\Debug\HospitalManagementSystem.Web.csproj.CopyComplete
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\obj\Debug\HospitalManagementSystem.Web.dll
 C:\Users\stshabalala\source\Repo\Vusumzi-Tshabalala\HospitalManagementSystemNet\HospitalManagementSystem.Web\obj\Debug\HospitalManagementSystem.Web.pdb
