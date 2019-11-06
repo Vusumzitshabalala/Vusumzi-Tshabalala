@@ -6,10 +6,15 @@
 /HospitalManagementSystemNet/.vs/HospitalManagementSystemNet/v16/Server/sqlite3
 /obj
 /bin
+/obj/
+/bin/
 /.vs
 /logs
+/.vs/
+/Logs/
 *.suo
 *.user
+*.txt
 /HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj/project.assets.json
 /HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj/HospitalManagementSystem.Console.DataSeed.csproj.nuget.g.targets
 /HospitalManagementSystemNet/HospitalManagementSystem.Console.DataSeed/obj/HospitalManagementSystem.Console.DataSeed.csproj.nuget.g.props
