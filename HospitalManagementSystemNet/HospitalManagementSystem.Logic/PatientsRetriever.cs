@@ -21,5 +21,10 @@ namespace HospitalManagementSystem.Logic
         {
             return PatientRepository.GetAllPatients();
         }
+
+        public void DeletePatient(int id)
+        {
+            PatientRepository.DeletePatient(id);
+        }
     }
 }

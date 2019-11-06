@@ -65,8 +65,8 @@ namespace HospitalManagementSystem.Web.Controllers
                     return View(patient);
                 }
 
-                patient.PersonId = patient.Person.Id;
-                PatientRegistration.Register(patient);
+                //patient.PersonId = patient.Person.Id;
+                PatientRegistration.Register(new Patient() { PersonId = patient.Person.Id }  );
 
                 return RedirectToAction("RegisterSuccess", "Account", new { statusMessage = registerHelper.Response.Item2 });
             }
@@ -80,6 +80,14 @@ namespace HospitalManagementSystem.Web.Controllers
         public ActionResult ViewPatients()
         {
             return View(PatientsRetriever.GetAllPatients());
+        }
+
+        [HttpGet]
+        public ActionResult DeletePatient(int id)
+        {
+            PatientsRetriever.DeletePatient(id);
+
+            return RedirectToAction("ViewPatients", "Index");
         }
 
         [HttpGet]

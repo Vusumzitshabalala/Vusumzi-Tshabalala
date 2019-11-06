@@ -68,7 +68,7 @@ namespace HospitalManagementSystem.Web.Controllers
                     }
 
                     //return RedirectToAction("Index", "Browse");
-                    return RedirectToAction("LoggedIn", "Account");
+                    return RedirectToAction("Profile", "Account");
                 }
                 else
                 {
@@ -146,7 +146,7 @@ namespace HospitalManagementSystem.Web.Controllers
 
             if (person == null)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Login", "Account");
             }
 
             ViewBag.Title = "My Profile";

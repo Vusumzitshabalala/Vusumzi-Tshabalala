@@ -1,6 +1,9 @@
 ﻿@model Tuple<List<HospitalManagementSystem.Models.Person>, bool>
 @using HospitalManagementSystem.Models.Web;
 
+@{
+    Layout = "..\\Shared\\_Layout.cshtml";
+}
 
 <link href="~/Content/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
 <link href="~/Content/plugins/dataTables/dataTables.responsive.css" rel="stylesheet" />
@@ -54,10 +57,6 @@
                                                 @Html.ActionLink(" Lock", "LockUnlockUser", new { username = userInformation.UserName, isLocked = true }, new { @class = "btn btn-white btn-sm label-warning" })
 
                                             }
-                                        }
-                                        @if (User != null && User.IsInRole(HospitalManagementSystem.Models.Constants.Roles.ADMINISTRATOR))
-                                        {
-                                            @Html.ActionLink("Businesses", "ClientBusinesses", "BusinessProfile", new { userInformationId = userInformation.Id }, new { @class = "btn btn-white btn-sm" })
                                         }
                                     </td>
                                 </tr>

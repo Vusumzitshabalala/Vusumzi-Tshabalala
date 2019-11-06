@@ -1,12 +1,14 @@
 ﻿@model Multiplex.Models.Security.UserInRoles
-
+@{
+    Layout = "..\\Shared\\_Layout.cshtml";
+}
 
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="ibox-content">
         <div class="row">
             <div class="col-xs-12 col-md-4">
                 @using (@Html.BeginForm())
-                {                    
+                {
                     <h3>Username/Cellphone: @Model.Username</h3>
                     <br />
                     @Html.Hidden("Username", Model.Username)
@@ -19,14 +21,14 @@
                                 @Html.Label(userInRole.RoleName)
                             </label>
                         </div>
-                        
+
                     }
                     <br />
                     <div class="form-group">
                         <input type="submit" name="saveUserRole" value="Assign Roles" class="btn btn-primary" />
                         <a href="@Url.Action("Users", "Account")" class="btn btn-white">Back to List</a>
                     </div>
-                    
+
                     <br />
                     <br />
                     @Model.StatusMessage

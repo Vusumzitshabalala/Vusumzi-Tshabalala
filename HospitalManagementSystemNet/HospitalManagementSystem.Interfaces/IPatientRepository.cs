@@ -8,5 +8,6 @@ namespace HospitalManagementSystem.Interfaces
         void SavePatient(Patient patient);
         Patient Retrieve(string identityNumber);
         List<Patient> GetAllPatients();
+        void DeletePatient(int id);
     }
 }

@@ -6,5 +6,6 @@ namespace HospitalManagementSystem.Interfaces
     public interface IPatientsRetriever
     {
         List<Patient> GetAllPatients();
+        void DeletePatient(int id);
     }
 }
