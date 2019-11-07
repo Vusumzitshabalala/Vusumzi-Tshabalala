@@ -296,7 +296,7 @@ namespace HospitalManagementSystem.Web.Controllers
 
             ////((UserInfo)person).Cellphone = person.Cellphone;
             //var register = userManager.Register<HospitalManagementSystemContext, Person>(person, userId, true, roles);
-            var registerHelper = new RegisterHelper(userId, person);
+            var registerHelper = new RegisterHelper(userId, person, null);
             registerHelper.Register();
 
             if (!registerHelper.Response.Item1)

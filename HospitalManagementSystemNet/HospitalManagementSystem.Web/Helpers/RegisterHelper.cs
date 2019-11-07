@@ -7,15 +7,23 @@ namespace HospitalManagementSystem.Web.Helpers
 {
     public class RegisterHelper
     {
-        public RegisterHelper(Guid userId, Person person)
+        public RegisterHelper(Guid userId, Person person, string[] roles)
         {
             UserId = userId;
             Person = person;
+            Roles = roles;
+
+            if(Roles == null || Roles.Length ==0)
+            {
+                Roles = new string[] { HospitalManagementSystem.Models.Constants.Roles.PATIENT };
+            }
         }
 
         private Guid UserId { get; set; }
 
         private Person Person { get; set; }
+
+        public string[] Roles { get; }
 
         public Tuple<bool, string> Response { get; set; }
 
@@ -25,12 +33,10 @@ namespace HospitalManagementSystem.Web.Helpers
             Person.UserName = Person.Cellphone;
 
             var userManager = new UserManager();
-            string[] roles = null;
 
-            roles = new string[] { HospitalManagementSystem.Models.Constants.Roles.PATIENT };
 
             //((UserInfo)userInformation).Cellphone = userInformation.Cellphone;
-            Response = userManager.Register<HospitalManagementSystemContext, Person>(Person, UserId, true, roles);
+            Response = userManager.Register<HospitalManagementSystemContext, Person>(Person, UserId, true, Roles);
         }
     }
 }
