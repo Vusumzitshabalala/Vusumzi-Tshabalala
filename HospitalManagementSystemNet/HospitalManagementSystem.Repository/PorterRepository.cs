@@ -3,6 +3,8 @@ using HospitalManagementSystem.Ioc;
 using HospitalManagementSystem.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Data.Entity;
 
 namespace HospitalManagementSystem.Repository
 {
@@ -14,9 +16,20 @@ namespace HospitalManagementSystem.Repository
             try
             {
                 using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
-                //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
                 {
-                    context.Porter.Add(porter);
+                    if (porter.Id > 0)
+                    {
+                        Porter savedPorter = context.Porter.FirstOrDefault(p => p.Id == porter.Id);
+
+                        if(savedPorter != null)
+                        {
+                            savedPorter = porter;
+                        }
+                    }
+                    else
+                    {
+                        context.Porter.Add(porter);
+                    }
                     context.SaveChanges();
                 }
             }
@@ -47,10 +60,49 @@ namespace HospitalManagementSystem.Repository
             using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
             //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
             {
-                result = context.Porter.ToList();
+                result = context.Porter.Include(p => p.Person).Where(p => p.Person.Active).ToList();
+
+                //Hack because inclusions are not working
+                foreach (var porter in result)
+                {
+                    porter.Person = context.Person.FirstOrDefault(p => p.Id == porter.PersonId);
+                }
             }
 
             return result;
+        }
+
+
+        public void DeletePorter(int id)
+        {
+            try
+            {
+                using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
+                //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
+                {
+                    Porter porter = context.Porter.Include(p => p.Person).FirstOrDefault(p => p.Id == id);
+
+                    if (porter != null)
+                    {
+                        porter.Person = context.Person.FirstOrDefault(p => p.Id == porter.PersonId);
+
+                        if (porter.Person != null)
+                        {
+                            //Bad code: place holder
+                            porter.Person.Email = "a@a.com";
+                            porter.Person.UserName = "a@a.com";
+                            porter.Person.Active = false;
+                        }
+                    }
+
+                    context.SaveChanges();
+                }
+            }
+            catch (System.Exception ex)
+            {
+
+                //throw ex;
+            }
         }
     }
 }

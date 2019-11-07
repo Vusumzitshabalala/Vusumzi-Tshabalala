@@ -12,11 +12,6 @@ namespace HospitalManagementSystem.Web.Helpers
             UserId = userId;
             Person = person;
             Roles = roles;
-
-            if(Roles == null || Roles.Length ==0)
-            {
-                Roles = new string[] { HospitalManagementSystem.Models.Constants.Roles.PATIENT };
-            }
         }
 
         private Guid UserId { get; set; }

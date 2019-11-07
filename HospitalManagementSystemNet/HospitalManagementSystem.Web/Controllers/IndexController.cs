@@ -66,8 +66,11 @@ namespace HospitalManagementSystem.Web.Controllers
                     return View(patient);
                 }
 
-                //patient.PersonId = patient.Person.Id;
-                PatientRegistration.Register(new Patient() { PersonId = patient.Person.Id }  );
+                //PatientRegistration.Register(new Patient() { PersonId = patient.Person.Id });int personId = porter.Person.Id;
+                int personId = patient.Person.Id;
+                patient.PersonId = personId;
+                patient.Person = null;
+                PatientRegistration.Register(patient);
 
                 return RedirectToAction("RegisterSuccess", "Account", new { statusMessage = registerHelper.Response.Item2 });
             }

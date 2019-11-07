@@ -1,26 +1,86 @@
 ﻿@model List<HospitalManagementSystem.Models.Porter>
 @{
-    ViewBag.Title = "ViewPorters";
+    ViewBag.Title = "View Porters";
     Layout = "..\\Shared\\_Layout.cshtml";
 }
 
-<h2>View Porters</h2>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">Name</div>
-        <div class="col-xs-12">Surname</div>
-        <div class="col-xs-12"><a href=""></a></div>
-    </div>
 
-    @foreach (var porter in Model)
-    {
-        <div class="row">
-            <div class="col-xs-12">@porter.Person?.Name</div>
-            <div class="col-xs-12">>@porter.Person?.Surname</div>
+<link href="~/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+<link href="~/css/plugins/dataTables/dataTables.responsive.css" rel="stylesheet" />
+<link href="~/css/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet" />
 
+<script src="~/Scripts/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="~/Scripts/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script src="~/Scripts/plugins/dataTables/dataTables.responsive.js"></script>
+<script src="~/Scripts/plugins/dataTables/dataTables.tableTools.min.js"></script>
 
-            <div class="col-xs-12"><a href=""> Delete </a> </div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox-content row">
+        <div class="">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                @if (Model != null && Model.Count > 0)
+                {
+                    <h2>Patient List</h2>
+                    <br />
+                    <table id="grid" class="table grid display">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Surname</th>
+                                <th>Date Of Birth</th>
+                                <th>Id Number</th>
+                                <th>Cellphone</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var userInformation in Model)
+                            {
+                                <tr>
+                                    <td>@userInformation.Person.FirstName</td>
+                                    <td>@userInformation.Person.Surname</td>
+                                    <td>@userInformation.Person.DateOfBirth.ToString("yyyy-MM-dd")</td>
+                                    <td>@userInformation.Person.IdNumber</td>
+                                    <td>@userInformation.Person.Cellphone </td>
+                                    <td>
+                                        @Html.ActionLink("Edit", "ProfileByUsername", "Account", new { username = userInformation.Person.Cellphone }, new { @class = "btn btn-white btn-sm" })
+                                        @Html.ActionLink("Delete", "DeletePatient", "Index", new { id = userInformation.Id }, new { @class = "btn btn-white btn-sm" })
+                                        @if (User != null && User.IsInRole(HospitalManagementSystem.Models.Constants.Roles.ADMINISTRATOR))
+                                        {
+                                            @Html.ActionLink("Roles", "UserRoles", "Account", new { username = userInformation.Person.Cellphone }, new { @class = "btn btn-white btn-sm" })
+                                        }
+                                        @if (User != null && User.Identity.Name != userInformation.Person.Cellphone)
+                                        {
+                                            if (userInformation.Person.IsLockedOut)
+                                            {
+                                                @Html.ActionLink("Unlock", "LockUnlockUser", "Account", new { username = userInformation.Person.Cellphone, isLocked = false }, new { @class = "btn btn-white btn-sm" })
+                                            }
+                                            else
+                                            {
+                                                @Html.ActionLink(" Lock", "LockUnlockUser", "Account", new { username = userInformation.Person.Cellphone, isLocked = true }, new { @class = "btn btn-white btn-sm label-warning" })
+
+                                            }
+                                        }
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+                }
+            </div>
         </div>
-    }
-
+    </div>
 </div>
+
+<script>
+    $(function () {
+        $(document).ready(function () {
+            $('.grid').dataTable({
+                responsive: true
+            });
+        });
+    }(jQuery));
+</script>

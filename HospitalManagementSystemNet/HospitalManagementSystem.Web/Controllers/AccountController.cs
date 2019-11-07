@@ -279,6 +279,7 @@ namespace HospitalManagementSystem.Web.Controllers
         public ActionResult Register(Person person)
         {
             var userId = Request.IsAuthenticated ? UserId : Guid.Empty;
+            var roles = new string[] { HospitalManagementSystem.Models.Constants.Roles.PATIENT };
             //person.Error = string.Empty;
             //person.UserName = person.Cellphone;
 
@@ -296,7 +297,7 @@ namespace HospitalManagementSystem.Web.Controllers
 
             ////((UserInfo)person).Cellphone = person.Cellphone;
             //var register = userManager.Register<HospitalManagementSystemContext, Person>(person, userId, true, roles);
-            var registerHelper = new RegisterHelper(userId, person, null);
+            var registerHelper = new RegisterHelper(userId, person, roles);
             registerHelper.Register();
 
             if (!registerHelper.Response.Item1)

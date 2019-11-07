@@ -17,6 +17,11 @@ namespace HospitalManagementSystem.Logic
 
         public IDoctorRepository DoctorRepository { get; }
 
+        public void DeleteDoctor(int id)
+        {
+            DoctorRepository.DeleteDoctor(id);
+        }
+
         public List<Doctor> GetAllDoctors()
         {
             return DoctorRepository.GetAllDoctors();

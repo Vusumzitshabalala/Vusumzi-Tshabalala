@@ -3,6 +3,8 @@ using HospitalManagementSystem.Ioc;
 using HospitalManagementSystem.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Data.Entity;
 
 namespace HospitalManagementSystem.Repository
 {
@@ -14,9 +16,20 @@ namespace HospitalManagementSystem.Repository
             try
             {
                 using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
-                //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
                 {
-                    context.Doctor.Add(doctor);
+                    if (doctor.Id > 0)
+                    {
+                        Doctor savedDoctor = context.Doctor.FirstOrDefault(p => p.Id == doctor.Id);
+
+                        if (savedDoctor != null)
+                        {
+                            savedDoctor = doctor;
+                        }
+                    }
+                    else
+                    {
+                        context.Doctor.Add(doctor);
+                    }
                     context.SaveChanges();
                 }
             }
@@ -31,9 +44,7 @@ namespace HospitalManagementSystem.Repository
         {
             Doctor result = null;
 
-
             using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
-            //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
             {
                 result = context.Doctor.FirstOrDefault(p => p.Person.IdNumber == identityNumber);
             }
@@ -45,12 +56,43 @@ namespace HospitalManagementSystem.Repository
             List<Doctor> result = null;
 
             using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
-            //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
             {
                 result = context.Doctor.ToList();
             }
 
             return result;
+        }
+
+        public void DeleteDoctor(int id)
+        {
+            try
+            {
+                using (HospitalManagementSystemContext context = TypeFactory.Resolve<HospitalManagementSystemContext>())
+                //using (HospitalManagementSystemContext context = new HospitalManagementSystemContext())
+                {
+                    Doctor doctor = context.Doctor.Include(p => p.Person).FirstOrDefault(p => p.Id == id);
+
+                    if (doctor != null)
+                    {
+                        doctor.Person = context.Person.FirstOrDefault(p => p.Id == doctor.PersonId);
+
+                        if (doctor.Person != null)
+                        {
+                            //Bad code: place holder
+                            doctor.Person.Email = "a@a.com";
+                            doctor.Person.UserName = "a@a.com";
+                            doctor.Person.Active = false;
+                        }
+                    }
+
+                    context.SaveChanges();
+                }
+            }
+            catch (System.Exception ex)
+            {
+
+                //throw ex;
+            }
         }
     }
 }

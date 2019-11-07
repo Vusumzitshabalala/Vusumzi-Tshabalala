@@ -1,121 +1,124 @@
-﻿@model HospitalManagementSystem.Models.Porter
+﻿@using Multiplex.Models.Security
+
+@using HospitalManagementSystem.Web.Helpers;
+@model HospitalManagementSystem.Models.Porter
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Staff Management";
     Layout = "..\\Shared\\_Layout.cshtml";
 }
+@{
+    var lookupHelper = new LookupHelper();
+    lookupHelper.GetGenders(Model.Person.GenderId);
+}
 
-<h2>Porter Management</h2>
+
+<link href="~/css/plugins/datapicker/datepicker3.css" rel="stylesheet" />
+<script src="~/Scripts/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+<div class="panel-top-padding view-panel">
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div class="wrapper wrapper-content">
+            @using (Html.BeginForm())
+            {
+
+                <div class="form-horizontal">
+                    @Html.AntiForgeryToken()
+
+                    <h4>Add Porter</h4>
+                    <hr />
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1"> </div>
+                            <div class="col-md-10">
+
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                <div class="">
+                                    @if (Model != null && Model.Person != null && !string.IsNullOrWhiteSpace(Model.Person.Error))
+                                    {
+                                        <div class="alert alert-warning" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <strong>Outcome: </strong> @Model.Person.Error
+                                        </div>
+                                    }
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon padding-icon"><i class="fa fa-user-alt"></i></span>
+                                    @Html.TextBoxFor(ui => ui.Person.FirstName, new { @class = "form-control", @placeholder = "First Name(s)" })
+                                    <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Person.FirstName)</span>
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon padding-icon"><i class="fa fa-user-alt"></i></span>
+                                    @Html.TextBoxFor(ui => ui.Person.Surname, new { @class = "form-control", @placeholder = "Surname" })
+                                    <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Person.Surname)</span>
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon padding-icon"><i class="fa fa-female"></i><i class="fa fa-male"></i></span>
+                                    @Html.DropDownListFor(ui => ui.Person.GenderId, lookupHelper.SelectedListItems, new { @class = "form-control", @placeholder = "Gender" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Person.GenderId)</span>
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon padding-icon"><i class="fa fa-id-badge"></i></span>
+                                    @Html.TextBoxFor(ui => ui.Person.IdNumber, new { @class = "form-control", @placeholder = "Id Number" })
+                                    <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Person.IdNumber)</span>
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon padding-icon"><i class="fa fa-phone"></i></span>
+                                    @Html.TextBoxFor(ui => ui.Person.Cellphone, new { @class = "form-control", @placeholder = "Cellphone (Username)" })
+                                    <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Person.Cellphone)</span>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon padding-icon"><i class="fa fa-envelope"></i></span>
+                                    @Html.TextBoxFor(ui => ui.Person.Email, new { @class = "form-control", @placeholder = "Email" })
+                                    <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Person.Email)</span>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon padding-icon"><i class="fa fa-address-card"></i></span>
+                                    @Html.TextAreaFor(ui => ui.Person.Address, new { @class = "form-control", @placeholder = "Address" })
+                                    <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Person.Address)</span>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon padding-icon"><i class="fa fa-calendar"></i></span>
+                                    @Html.EditorFor(ui => ui.Person.DateOfBirth, new Dictionary<string, object> { { "readonly", "" }, { "class", "date form-control" } })
+
+                                    <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Person.DateOfBirth)</span>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon padding-icon"><i class="fa fa-flag"></i></span>
+                                    @Html.DropDownListFor(ui => ui.Person.NationalityId, new List<SelectListItem>() { new SelectListItem() { Text = "South Africa", Value = "1" }, new SelectListItem() { Text = "Lesotho", Value = "1" } }, new { @class = "form-control", @placeholder = "Nationality" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Person.NationalityId)</span>
+                                </div>
 
 
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
+                                <div class="input-group">
+                                    <span class="input-group-addon padding-icon"><i class="fa fa-rainbow"></i></span>
+                                    @Html.DropDownListFor(ui => ui.Person.RaceId, new List<SelectListItem>() { new SelectListItem() { Text = "Black", Value = "1" }, new SelectListItem() { Text = "Indian", Value = "2" }, new SelectListItem() { Text = "Coloured", Value = "3" }, new SelectListItem() { Text = "White", Value = "4" } }, new { @class = "form-control", @placeholder = "Race" }) <br /> <span class="alert-danger"> @Html.ValidationMessageFor(ui => ui.Person.RaceId)</span>
+                                </div>
+                            </div>
+                            <div class="col-md-1"> </div>
 
-    <div class="form-horizontal">
-        <h4>Add Porter</h4>
-        <hr />
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2"> </div>
-                <div class="col-md-10">
-
-                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Person.Name, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.Person.Name, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Person.Name, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Person.Surname, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.Person.Surname, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Person.Surname, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Person.DateOfBirth, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.Person.DateOfBirth, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Person.DateOfBirth, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Person.IdentityNumber, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.Person.IdentityNumber, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Person.IdentityNumber, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Person.Address, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.TextAreaFor(model => model.Person.Address, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Person.Address, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Person.CellNumber, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.Person.CellNumber, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Person.CellNumber, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Person.NationalityId, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.DropDownListFor(model => model.Person.NationalityId, new List<SelectListItem>() { new SelectListItem() { Text = "South Africa", Value = "1" }, new SelectListItem() { Text = "Lesotho", Value = "1" } }, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Person.NationalityId, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Person.GenderId, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.DropDownListFor(model => model.Person.GenderId, new List<SelectListItem>() { new SelectListItem() { Text = "Male", Value = "1" }, new SelectListItem() { Text = "Female", Value = "2" } }, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Person.GenderId, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.Person.RaceId, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.DropDownListFor(model => model.Person.RaceId, new List<SelectListItem>() { new SelectListItem() { Text = "Black", Value = "1" }, new SelectListItem() { Text = "Indian", Value = "2" }, new SelectListItem() { Text = "Coloured", Value = "3" }, new SelectListItem() { Text = "White", Value = "4" } }, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Person.RaceId, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.PracticeNumber, htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.PracticeNumber, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.PracticeNumber, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" value="Create" class="btn btn-default" />
                         </div>
                     </div>
                 </div>
 
-            </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn btn-primary block full-width m-b" value="Create" />
+                    </div>
+                </div>
+            }
+
         </div>
     </div>
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
 </div>
-
 <script src="~/Scripts/jquery-3.3.1.min.js"></script>
 <script src="~/Scripts/jquery.validate.min.js"></script>
 <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

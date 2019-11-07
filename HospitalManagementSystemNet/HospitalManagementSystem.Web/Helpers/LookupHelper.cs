@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using HospitalManagementSystem.Logic;
+using HospitalManagementSystem.Repository;
+using System.Collections.Generic;
 using System.Web.Mvc;
 
 namespace HospitalManagementSystem.Web.Helpers
@@ -48,6 +50,42 @@ namespace HospitalManagementSystem.Web.Helpers
         {
             SelectedListItems.Add(new SelectListItem() { Value = "0", Text = defaultValue, Selected = selectedGenderId == 0 });
             GetGenders(selectedGenderId);
+        }
+
+        public void GetDoctors(int selectedDoctorId)
+        {
+            DoctorsRetriever doctorsRetriever = new DoctorsRetriever(new DoctorRepository());
+
+            var doctors = doctorsRetriever.GetAllDoctors();
+
+            if (doctors != null)
+            {
+                doctors.ForEach(c => SelectedListItems.Add(new SelectListItem() { Value = c.Id.ToString(), Text =  $"{c.Person.FirstName} {c.Person.Surname} ({c.PracticeNumber})"  , Selected = c.Id == selectedDoctorId }));
+            }
+        }
+
+        public void GetDoctors(int selectedGenderId, string defaultValue)
+        {
+            SelectedListItems.Add(new SelectListItem() { Value = "0", Text = defaultValue, Selected = selectedGenderId == 0 });
+            GetDoctors(selectedGenderId);
+        }
+
+        public void GetPatients(int selectedPatientId)
+        {
+            PatientsRetriever patientsRetriever = new PatientsRetriever(new PatientRepository());
+
+            var doctors = patientsRetriever.GetAllPatients();
+
+            if (doctors != null)
+            {
+                doctors.ForEach(c => SelectedListItems.Add(new SelectListItem() { Value = c.Id.ToString(), Text = $"{c.Person.FirstName} {c.Person.Surname} ({c.Person.Cellphone})", Selected = c.Id == selectedPatientId }));
+            }
+        }
+
+        public void GetPatients(int selectedGenderId, string defaultValue)
+        {
+            SelectedListItems.Add(new SelectListItem() { Value = "0", Text = defaultValue, Selected = selectedGenderId == 0 });
+            GetDoctors(selectedGenderId);
         }
 
         //public void GetCommunicationTypes(int selectedCommunicationTypeId)

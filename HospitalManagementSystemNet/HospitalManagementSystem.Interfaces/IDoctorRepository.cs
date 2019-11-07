@@ -9,5 +9,6 @@ namespace HospitalManagementSystem.Interfaces
 
         Doctor Retrieve(string IdentityNumber);
         List<Doctor> GetAllDoctors();
+        void DeleteDoctor(int id);
     }
 }
