@@ -56,7 +56,8 @@ namespace HospitalManagementSystem.Web.Controllers
             try
             {
                 var userId = Request.IsAuthenticated ? UserId : Guid.Empty;
-                var registerHelper = new RegisterHelper(userId, patient.Person);
+                var roles = new string[] { HospitalManagementSystem.Models.Constants.Roles.PATIENT };
+                var registerHelper = new RegisterHelper(userId, patient.Person, roles);
                 registerHelper.Register();
 
                 if (!registerHelper.Response.Item1)
